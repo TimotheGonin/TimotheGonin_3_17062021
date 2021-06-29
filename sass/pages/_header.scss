@@ -1,0 +1,7 @@
+.header {
+    &__title {
+        @extend %flex-x-center;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
