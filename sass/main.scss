@@ -1,2 +1,11 @@
 // UTILS
 @import "./utils/variables";
+@import "./utils/_mixin";
+
+// BASE
+@import "./base/font";
+@import "./base/reset";
+@import "./base/typography";
+
+// PAGES
+@import "./pages/header";
