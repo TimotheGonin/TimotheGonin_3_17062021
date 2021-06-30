@@ -1,0 +1,13 @@
+.btn {
+    border: inherit;
+    border-radius: 4rem;
+    background: $color-primary;
+    background: linear-gradient(
+        -5deg,
+        $color-primary 10%,
+        $color-secondary 105%
+    );
+    color: white;
+    padding: 1.6rem 2.6rem;
+    font-size: 1.6rem;
+}
