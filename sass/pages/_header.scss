@@ -1,53 +1,54 @@
 .header {
     &__title {
         @extend %flex-x-center;
-        margin-top: 1rem;
-        margin-bottom: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
     }
-}
 
-.search-form {
-    background: $darken-bg;
-    @extend %flex-y-center;
-    text-align: center;
+    .search-form {
+        background: $darken-bg;
+        @extend %flex-y-center;
+        text-align: center;
 
-    .search-bar {
-        @extend %flex-center;
-        background-color: #eaeaea;
-        padding: 1.5rem 0;
-        width: 100%;
-        color: #353535;
-
-        &__icon {
+        .search-bar {
+            box-shadow: inset 0 5px 5px -5px darken(#eaeaea, 25);
             @extend %flex-center;
-            font-size: 1.6rem;
-            padding-right: 1.7rem;
-        }
-
-        &__input {
             background-color: #eaeaea;
-            outline: none;
-            border: none;
-            font-weight: 700;
-            max-width: 35%;
-            font-size: 1.5rem;
-        }
-    }
+            padding: 1.5rem 0;
+            width: 100%;
+            color: #353535;
 
-    .search-info {
-        margin: 3.5rem 0 5.6rem;
+            &__icon {
+                @extend %flex-center;
+                font-size: 1.6rem;
+                padding-right: 1.7rem;
+            }
 
-        &__title {
-            font-weight: 700;
-            font-size: 2.4rem;
-            padding: 0 2.4em;
-            margin-bottom: 1rem;
+            &__input {
+                background-color: #eaeaea;
+                outline: none;
+                border: none;
+                font-weight: 700;
+                max-width: 35%;
+                font-size: 1.5rem;
+            }
         }
-        &__subtitle {
-            font-weight: 300;
-            font-size: 1.75rem;
-            padding: 0 1.75em;
-            margin-bottom: 3rem;
+
+        .search-info {
+            margin: 3.5rem 0 5.6rem;
+
+            &__title {
+                font-weight: 700;
+                font-size: 2.4rem;
+                padding: 0 2.4em;
+                margin-bottom: 1rem;
+            }
+            &__subtitle {
+                font-weight: 300;
+                font-size: 1.75rem;
+                padding: 0 1.75em;
+                margin-bottom: 3rem;
+            }
         }
     }
 }
