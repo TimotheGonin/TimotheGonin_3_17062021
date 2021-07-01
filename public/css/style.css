@@ -34,8 +34,8 @@ html {
 .btn {
   border: inherit;
   border-radius: 4rem;
-  background: #9356dc;
   background: linear-gradient(-5deg, #9356dc 10%, #ff79da 105%);
+  box-shadow: 2px 5px 16px 0px #aaaaaa;
   color: white;
   padding: 1.6rem 2.6rem;
   font-size: 1.6rem;
