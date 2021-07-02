@@ -1,22 +1,12 @@
-// .helper {
-//     // &__card {
-//     //     @extend %element-shadow;
-//     // }
-// }
-.helper__deck {
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-    flex-flow: row wrap;
-}
 .helper-card {
-    @extend %element-shadow;
+    @extend %element-shadow-soft;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: $darken-bg;
-    width: 33rem;
-    margin: 1.5rem 0;
+    max-width: 33rem;
+    width: 100%;
+    margin: 1.5rem 1rem;
     padding: 2.5rem 0;
     border-radius: 1.8rem;
     position: relative;
@@ -32,12 +22,12 @@
         left: -1.2rem;
     }
     &__icon {
-        @extend %flex-center;
+        // @extend %flex-center;
         color: #7e7e7e;
         font-size: 2rem;
         width: 2.4rem;
         height: 2.4rem;
-        margin: 0 2rem;
+        margin: 0 2rem 0 3.5rem;
     }
     &__title {
         font-weight: 500;
