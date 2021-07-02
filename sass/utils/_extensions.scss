@@ -12,5 +12,13 @@
 %flex-center {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+}
+
+%element-shadow {
+    box-shadow: 2px 5px 16px 0px darken(#eaeaea, 25);
+}
+
+%element-shadow-soft {
+    box-shadow: 2px 5px 16px 0px darken(#eaeaea, 10);
 }
