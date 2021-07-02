@@ -54,12 +54,27 @@ html {
   font-size: 1.6rem;
 }
 
+.pop-up {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: #99e2d0;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.2rem;
+}
+.pop-up__title {
+  color: #217460;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
 .restaurant-card {
   max-width: 33.5rem;
   border-radius: 1.5rem;
 }
 .restaurant-card__figure {
   height: 17.4rem;
+  position: relative;
 }
 .restaurant-card__figure img {
   border-top-left-radius: 1.5rem;
