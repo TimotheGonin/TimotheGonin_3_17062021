@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.restaurant-card {
+  box-shadow: 2px 5px 16px 0px #aaaaaa;
+}
+
 .helper-card {
   box-shadow: 2px 5px 16px 0px #d1d1d1;
 }
@@ -48,6 +52,46 @@ html {
   color: white;
   padding: 1.6rem 2.6rem;
   font-size: 1.6rem;
+}
+
+.restaurant-card {
+  max-width: 33.5rem;
+  border-radius: 1.5rem;
+}
+.restaurant-card__figure {
+  height: 17.4rem;
+}
+.restaurant-card__figure img {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  height: 17.4rem;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant-card__body {
+  height: 7.7rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  position: relative;
+}
+.restaurant-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.restaurant-card__subtitle {
+  font-weight: 300;
+}
+.restaurant-card__action {
+  align-self: flex-end;
+  font-size: 2.4rem;
+  position: absolute;
+  right: 3rem;
+  top: 20%;
+  bottom: 50%;
 }
 
 .helper {
