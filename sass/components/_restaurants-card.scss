@@ -1,7 +1,8 @@
 .restaurant-card {
-    max-width: 33.5rem;
+    width: 33.5rem;
     @extend %element-shadow;
     border-radius: 1.5rem;
+    margin: 1rem 0;
 
     &__figure {
         height: 17.4rem;

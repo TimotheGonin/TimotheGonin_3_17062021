@@ -69,8 +69,9 @@ html {
 }
 
 .restaurant-card {
-  max-width: 33.5rem;
+  width: 33.5rem;
   border-radius: 1.5rem;
+  margin: 1rem 0;
 }
 .restaurant-card__figure {
   height: 17.4rem;
@@ -202,6 +203,19 @@ html {
 .helper-card__title {
   font-weight: 500;
   font-size: 1.6rem;
+}
+
+.restaurants-selection {
+  padding: 5rem 2em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.restaurants-selection__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
