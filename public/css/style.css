@@ -70,11 +70,11 @@ html {
 
 .restaurant-card {
   width: 33.5rem;
+  height: 25.1rem;
   border-radius: 1.5rem;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 .restaurant-card__figure {
-  height: 17.4rem;
   position: relative;
 }
 .restaurant-card__figure img {
@@ -210,6 +210,7 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  background: #f6f6f6;
 }
 .restaurants-selection__title {
   font-weight: 700;
