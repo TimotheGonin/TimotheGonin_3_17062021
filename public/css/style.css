@@ -110,6 +110,40 @@ html {
   bottom: 50%;
 }
 
+.footer {
+  background: #353535;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 2.7rem 1.5em 3.7rem 1.5em;
+}
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 1.7rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+.footer__action {
+  display: flex;
+  align-items: baseline;
+}
+.footer__action i {
+  font-size: 1.2rem;
+}
+.footer__action p {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.footer p,
+.footer a {
+  padding: 0.5rem 0;
+}
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
 .helper {
   display: flex;
   justify-content: center;
