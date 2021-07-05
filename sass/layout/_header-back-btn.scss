@@ -1,0 +1,18 @@
+.header-back-btn {
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    position: relative;
+    @extend %flex-center;
+}
+.back-btn {
+    @extend %flex-center;
+    border: none;
+    &__icon {
+        position: absolute;
+        left: 2rem;
+        border: none;
+        background: inherit;
+        font-size: 1.8rem;
+        color: $dark-bg;
+    }
+}

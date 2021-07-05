@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.helper-card__number, .header .search-form .search-bar__icon, .header .search-form .search-bar {
+.helper-card__number, .header .search-form .search-bar__icon, .header .search-form .search-bar, .back-btn, .header-back-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +34,8 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.header__title {
+.header__title,
+.header-back-btn__title {
   font-family: Shrikhand, sans-serif;
   font-size: 2.9rem;
 }
@@ -166,6 +167,24 @@ a {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.header-back-btn {
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+  position: relative;
+}
+
+.back-btn {
+  border: none;
+}
+.back-btn__icon {
+  position: absolute;
+  left: 2rem;
+  border: none;
+  background: inherit;
+  font-size: 1.8rem;
+  color: #353535;
 }
 
 .header__title {
