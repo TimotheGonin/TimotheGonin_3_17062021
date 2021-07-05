@@ -69,7 +69,8 @@ html {
 }
 
 .restaurant-card {
-  width: 33.5rem;
+  width: 100%;
+  max-width: 33.5rem;
   height: 25.1rem;
   border-radius: 1.5rem;
   margin: 1rem 0 2rem 0;
@@ -153,12 +154,12 @@ html {
 }
 .helper .helper__title {
   margin-bottom: 1rem;
-  align-self: flex-start;
+  width: 100%;
 }
 .helper .helper__deck {
   display: flex;
   justify-content: center;
-  align-items: space-between;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -246,13 +247,20 @@ html {
   justify-content: center;
   align-items: center;
   background: #f6f6f6;
+  width: 100%;
 }
 .restaurants-selection__title {
   width: 100%;
   font-weight: 700;
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  align-self: flex-start;
+}
+.restaurants-selection .restaurant-deck {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
