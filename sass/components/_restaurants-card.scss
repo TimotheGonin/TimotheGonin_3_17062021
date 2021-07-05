@@ -1,11 +1,11 @@
 .restaurant-card {
     width: 33.5rem;
+    height: 25.1rem;
     @extend %element-shadow;
     border-radius: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
 
     &__figure {
-        height: 17.4rem;
         position: relative;
         img {
             border-top-left-radius: 1.5rem;
