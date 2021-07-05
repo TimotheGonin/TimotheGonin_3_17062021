@@ -2,11 +2,17 @@
     font-family: "Roboto", sans-serif;
 }
 
-.header__title {
+.header__title,
+.header-back-btn__title {
     font-family: Shrikhand, sans-serif;
     font-size: 2.9rem;
 }
 .helper__title {
     font-weight: 700;
     font-size: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
