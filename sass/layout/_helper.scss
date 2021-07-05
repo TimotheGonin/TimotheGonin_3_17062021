@@ -7,13 +7,13 @@
 
     .helper__title {
         margin-bottom: 1rem;
-        align-self: flex-start;
+        width: 100%;
     }
 
     .helper__deck {
         display: flex;
         justify-content: center;
-        align-items: space-between;
+        align-items: center;
         flex-flow: row wrap;
     }
 }

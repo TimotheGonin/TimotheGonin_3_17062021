@@ -1,5 +1,6 @@
 .restaurant-card {
-    width: 33.5rem;
+    width: 100%;
+    max-width: 33.5rem;
     height: 25.1rem;
     @extend %element-shadow;
     border-radius: 1.5rem;
