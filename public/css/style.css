@@ -110,6 +110,11 @@ html {
   bottom: 50%;
 }
 
+.footer {
+  background: #353535;
+  color: white;
+}
+
 .helper {
   display: flex;
   justify-content: center;
