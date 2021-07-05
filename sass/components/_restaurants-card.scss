@@ -1,0 +1,43 @@
+.restaurant-card {
+    width: 33.5rem;
+    height: 25.1rem;
+    @extend %element-shadow;
+    border-radius: 1.5rem;
+    margin: 1rem 0 2rem 0;
+
+    &__figure {
+        position: relative;
+        img {
+            border-top-left-radius: 1.5rem;
+            border-top-right-radius: 1.5rem;
+            height: 17.4rem;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__body {
+        height: 7.7rem;
+        font-size: 1.6rem;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        position: relative;
+    }
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    &__subtitle {
+        font-weight: 300;
+    }
+    &__action {
+        align-self: flex-end;
+        font-size: 2.4rem;
+        position: absolute;
+        right: 3rem;
+        top: 20%;
+        bottom: 50%;
+    }
+}

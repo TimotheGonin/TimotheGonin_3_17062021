@@ -1,0 +1,13 @@
+.pop-up {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: $color-tertiary;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+    &__title {
+        color: darken($color-tertiary, 45);
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+}

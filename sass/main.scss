@@ -11,6 +11,8 @@
 
 // COMPONENTS
 @import "./components/btn";
+@import "./components/pop-up";
+@import "./components/restaurants-card";
 
 //LAYOUT
 @import "./layout/helper";
@@ -18,3 +20,4 @@
 // PAGES
 @import "./pages/header";
 @import "./pages/helper";
+@import "./pages/restaurants-selection";

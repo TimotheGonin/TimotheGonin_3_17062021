@@ -1,0 +1,16 @@
+.restaurants-selection {
+    padding: 5rem 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background: $darken-bg;
+
+    &__title {
+        width: 100%;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        align-self: flex-start;
+    }
+}
