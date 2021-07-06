@@ -13,13 +13,16 @@
 @import "./components/btn";
 @import "./components/pop-up";
 @import "./components/restaurants-card";
+@import "./components/card-small";
+
 @import "./components/footer";
 
 //LAYOUT
 @import "./layout/helper";
-@import "./layout/header-back-btn";
+@import "./layout/navbar";
 
 // PAGES
 @import "./pages/header";
 @import "./pages/helper";
 @import "./pages/restaurants-selection";
+@import "./pages/restaurant-pages";
