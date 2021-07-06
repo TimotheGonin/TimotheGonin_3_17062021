@@ -1,15 +1,16 @@
 .navbar {
     @extend %flex-center;
     margin-top: 1.5rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     position: relative;
     &__icon {
         @extend %flex-center;
         position: absolute;
         left: 2rem;
+        top: 15%;
         border: none;
         background: inherit;
-        font-size: 2rem;
+        font-size: 2.1rem;
         color: $dark-bg;
     }
 }
