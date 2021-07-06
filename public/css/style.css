@@ -287,7 +287,6 @@ a {
 .presentation {
   /*background*/
   height: 32rem;
-  background: red;
   background-image: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: top;
@@ -302,9 +301,9 @@ a {
   border-top-right-radius: 4rem;
   width: 100%;
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 2.5rem 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .presentation__title {
@@ -313,6 +312,25 @@ a {
 }
 .presentation__icon {
   font-size: 2.4rem;
+}
+
+.menu {
+  background: #f6f6f6;
+  padding: 0 2rem;
+}
+.menu .step__title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.menu .step__title::after {
+  content: "";
+  display: block;
+  background: #99e2d0;
+  margin-top: 0.5rem;
+  height: 0.3rem;
+  width: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
