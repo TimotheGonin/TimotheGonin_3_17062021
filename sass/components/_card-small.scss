@@ -1,0 +1,22 @@
+.card-small {
+    background: white;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    &__title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 1.35rem;
+        display: inline-block;
+        width: 90%;
+    }
+    &__price {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+}
