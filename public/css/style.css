@@ -208,6 +208,9 @@ a {
   font-size: 2.1rem;
   color: #353535;
 }
+.navbar__icon:hover {
+  cursor: pointer;
+}
 
 .header__title {
   padding-top: 1rem;

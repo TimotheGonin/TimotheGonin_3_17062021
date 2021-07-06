@@ -12,5 +12,8 @@
         background: inherit;
         font-size: 2.1rem;
         color: $dark-bg;
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
