@@ -26,6 +26,27 @@
   box-shadow: 2px 5px 16px 0px #d1d1d1;
 }
 
+.presentation--la-palette-du-gout__header {
+  background: #f6f6f6;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 4rem 2.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation--la-palette-du-gout__title {
+  font-family: Shrikhand, sans-serif;
+  font-size: 2.7rem;
+}
+
+.presentation--la-palette-du-gout__icon {
+  font-size: 2.4rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -312,36 +333,15 @@ a {
   width: 100%;
 }
 
-.presentation {
-  /*background*/
-  height: 32rem;
+.presentation--la-palette-du-gout {
   background-image: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: top;
-  /*display*/
+  height: 32rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-.presentation__header {
-  background: #f6f6f6;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
-  width: 100%;
-  text-align: center;
-  padding: 2.5rem 4rem 2.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.presentation__title {
-  font-family: Shrikhand, sans-serif;
-  font-size: 2.7rem;
-}
-.presentation__icon {
-  font-size: 2.4rem;
-}
-
 .menu {
   background: #f6f6f6;
   padding: 0 2rem;
