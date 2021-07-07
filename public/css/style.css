@@ -26,7 +26,7 @@
   box-shadow: 2px 5px 16px 0px #d1d1d1;
 }
 
-.presentation--a-la-francaise__header, .presentation--la-note-enchantee__header, .presentation--la-palette-du-gout__header {
+.presentation--le-delice-des-sens__header, .presentation--a-la-francaise__header, .presentation--la-note-enchantee__header, .presentation--la-palette-du-gout__header {
   background: #f6f6f6;
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
@@ -38,12 +38,12 @@
   align-items: center;
 }
 
-.presentation--a-la-francaise__title, .presentation--la-note-enchantee__title, .presentation--la-palette-du-gout__title {
+.presentation--le-delice-des-sens__title, .presentation--a-la-francaise__title, .presentation--la-note-enchantee__title, .presentation--la-palette-du-gout__title {
   font-family: Shrikhand, sans-serif;
   font-size: 2.7rem;
 }
 
-.presentation--a-la-francaise__icon, .presentation--la-note-enchantee__icon, .presentation--la-palette-du-gout__icon {
+.presentation--le-delice-des-sens__icon, .presentation--a-la-francaise__icon, .presentation--la-note-enchantee__icon, .presentation--la-palette-du-gout__icon {
   font-size: 2.4rem;
 }
 
@@ -353,6 +353,15 @@ a {
 }
 .presentation--a-la-francaise {
   background-image: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.presentation--le-delice-des-sens {
+  background-image: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 32rem;

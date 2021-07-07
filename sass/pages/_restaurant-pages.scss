@@ -55,6 +55,25 @@
             @extend %restaurant-pages-icon;
         }
     }
+
+    &--le-delice-des-sens {
+        background-image: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 32rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &__header {
+            @extend %restaurant-pages-header;
+        }
+        &__title {
+            @extend %restaurant-pages-title;
+        }
+        &__icon {
+            @extend %restaurant-pages-icon;
+        }
+    }
 }
 
 .menu {
