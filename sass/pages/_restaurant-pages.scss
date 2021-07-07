@@ -36,6 +36,25 @@
             @extend %restaurant-pages-icon;
         }
     }
+
+    &--a-la-francaise {
+        background-image: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 32rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        &__header {
+            @extend %restaurant-pages-header;
+        }
+        &__title {
+            @extend %restaurant-pages-title;
+        }
+        &__icon {
+            @extend %restaurant-pages-icon;
+        }
+    }
 }
 
 .menu {
