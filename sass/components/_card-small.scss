@@ -3,8 +3,9 @@
     max-width: 34.9rem;
     background: white;
     padding: 1.3rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     border-radius: 1.5rem;
+    @extend%element-shadow-soft;
     &__title {
         font-weight: 500;
         font-size: 1.8rem;
