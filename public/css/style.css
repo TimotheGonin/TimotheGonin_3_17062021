@@ -71,6 +71,28 @@ a {
   color: inherit;
 }
 
+.container {
+  font-size: 2.4rem;
+  position: absolute;
+  right: 3rem;
+}
+.container .hearth--solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.2rem black !important;
+}
+.container .hearth--solid:hover {
+  background: linear-gradient(-145deg, #9356dc 15%, #ff79da 85%) !important;
+  background-clip: text !important;
+  color: transparent;
+  text-shadow: 0 0 0 transparent !important;
+}
+
 .btn {
   border: inherit;
   border-radius: 4rem;
@@ -128,14 +150,6 @@ a {
 }
 .restaurant-card__subtitle {
   font-weight: 300;
-}
-.restaurant-card__action {
-  align-self: flex-end;
-  font-size: 2.4rem;
-  position: absolute;
-  right: 3rem;
-  top: 20%;
-  bottom: 50%;
 }
 
 .card-small {
