@@ -85,14 +85,13 @@ a {
   width: 30px;
   cursor: pointer;
   color: #f6f6f6;
-  -webkit-text-stroke-width: 0.15rem;
-  -webkit-text-stroke-color: #353535;
+  text-shadow: 0 0 0.2rem black !important;
 }
 .container .hearth--solid:hover {
-  background: linear-gradient(-145deg, #9356dc 15%, #ff79da 85%);
-  background-clip: text;
+  background: linear-gradient(-145deg, #9356dc 15%, #ff79da 85%) !important;
+  background-clip: text !important;
   color: transparent;
-  -webkit-text-stroke-color: transparent;
+  text-shadow: 0 0 0 transparent !important;
 }
 
 .btn {
@@ -152,14 +151,6 @@ a {
 }
 .restaurant-card__subtitle {
   font-weight: 300;
-}
-.restaurant-card__action {
-  align-self: flex-end;
-  font-size: 2.4rem;
-  position: absolute;
-  right: 3rem;
-  top: 20%;
-  bottom: 50%;
 }
 
 .card-small {
