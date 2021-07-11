@@ -72,7 +72,6 @@ a {
 }
 
 .container {
-  align-self: flex-end;
   font-size: 2.4rem;
   position: absolute;
   right: 3rem;
