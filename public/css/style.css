@@ -51,6 +51,14 @@ html {
   font-size: 62.5%;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -153,28 +161,63 @@ a {
 }
 
 .card-small {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  max-width: 34.9rem;
+  max-width: 34.9rem !important;
   background: white;
-  padding: 1.3rem 1rem;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
+}
+.card-small__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0rem 0rem 0rem 1rem;
+  width: 100%;
 }
 .card-small__title {
   font-weight: 500;
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card-small__subtitle {
   font-weight: 300;
   font-size: 1.35rem;
   display: inline-block;
   width: 90%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card-small__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   font-style: normal;
+  width: 60px;
+  padding: 1rem 1rem 1rem 0;
   font-weight: 700;
   font-size: 1.4rem;
+}
+.card-small__checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  height: 6.9rem;
+  width: 5.9rem;
+  background: #99e2d0;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  color: white;
+  font-size: 1.6rem;
+  flex-shrink: 0;
 }
 
 .footer {
