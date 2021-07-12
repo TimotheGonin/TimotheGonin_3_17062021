@@ -3,7 +3,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 34.9rem !important;
-    // max-height: 6.9rem;
+
     background: white;
     margin-bottom: 1.5rem;
     border-radius: 1.5rem;
@@ -15,9 +15,7 @@
         justify-content: center;
         align-items: start;
         padding: 0rem 0rem 0rem 1rem;
-        // text-overflow: ellipsis;
-        // overflow: hidden;
-        // white-space: nowrap;
+        overflow: hidden;
         width: 100%;
     }
     &__title {
