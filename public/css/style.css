@@ -170,6 +170,7 @@ a {
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
   cursor: pointer;
+  overflow: hidden;
 }
 .card-small__info {
   display: flex;
@@ -222,6 +223,9 @@ a {
   font-size: 1.6rem;
   flex-shrink: 0;
   display: none;
+}
+.card-small:hover .card-small__price {
+  animation: slide 300ms ease-out;
 }
 .card-small:hover .card-small__checked {
   display: flex;

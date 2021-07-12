@@ -8,6 +8,7 @@
     margin-bottom: 1.5rem;
     border-radius: 1.5rem;
     cursor: pointer;
+    overflow: hidden;
     @extend%element-shadow-soft;
 
     &__info {
@@ -66,6 +67,9 @@
     // ANIMATION
     &:hover {
         .card-small {
+            &__price {
+                animation: slide 300ms ease-out;
+            }
             &__checked {
                 display: flex;
                 animation: slide 300ms ease-out;
