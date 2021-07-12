@@ -164,10 +164,12 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 34.9rem !important;
+  max-width: 34.9rem;
+  height: 6.9rem;
   background: white;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
+  cursor: pointer;
 }
 .card-small__info {
   display: flex;
@@ -219,6 +221,30 @@ a {
   color: white;
   font-size: 1.6rem;
   flex-shrink: 0;
+  display: none;
+}
+.card-small:hover .card-small__checked {
+  display: flex;
+  animation: slide 300ms ease-out;
+}
+.card-small:hover .card-small__checked i {
+  animation: rotate 150ms 150ms ease-in;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(5.9rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .footer {
