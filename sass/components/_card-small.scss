@@ -7,13 +7,14 @@
     background: white;
     margin-bottom: 1.5rem;
     border-radius: 1.5rem;
-
+    overflow: hidden;
+    cursor: pointer;
     @extend%element-shadow-soft;
+
     &__info {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
         padding: 0rem 0rem 0rem 1rem;
         overflow: hidden;
         width: 100%;
@@ -45,6 +46,8 @@
         padding: 1rem 1rem 1rem 0;
         font-weight: 700;
         font-size: 1.4rem;
+        transform: translateX(2rem);
+        transition: transform 400ms;
     }
     &__checked {
         display: flex;
@@ -60,5 +63,18 @@
         font-size: 1.6rem;
         // display: none;
         flex-shrink: 0;
+        transform: translateX(5.9rem);
+        transition: transform 400ms;
+        .fas {
+            transform: rotate(180deg);
+            transition: transform 300ms 150ms;
+        }
+    }
+    &:hover &__checked,
+    &:hover &__price {
+        transform: translateX(0px);
+    }
+    &:hover &__checked > .fas {
+        transform: rotate(0deg);
     }
 }

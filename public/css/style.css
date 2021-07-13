@@ -168,12 +168,13 @@ a {
   background: white;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
 }
 .card-small__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   padding: 0rem 0rem 0rem 1rem;
   overflow: hidden;
   width: 100%;
@@ -205,6 +206,8 @@ a {
   padding: 1rem 1rem 1rem 0;
   font-weight: 700;
   font-size: 1.4rem;
+  transform: translateX(2rem);
+  transition: transform 400ms;
 }
 .card-small__checked {
   display: flex;
@@ -219,6 +222,18 @@ a {
   color: white;
   font-size: 1.6rem;
   flex-shrink: 0;
+  transform: translateX(5.9rem);
+  transition: transform 400ms;
+}
+.card-small__checked .fas {
+  transform: rotate(180deg);
+  transition: transform 300ms 150ms;
+}
+.card-small:hover .card-small__checked, .card-small:hover .card-small__price {
+  transform: translateX(0px);
+}
+.card-small:hover .card-small__checked > .fas {
+  transform: rotate(0deg);
 }
 
 .footer {
