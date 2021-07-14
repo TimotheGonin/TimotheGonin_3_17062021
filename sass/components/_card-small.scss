@@ -43,11 +43,10 @@
         align-items: center;
         font-style: normal;
         width: 60px;
-        padding: 1rem 1rem 1rem 0;
+        padding-bottom: 1rem;
         font-weight: 700;
         font-size: 1.4rem;
-        transform: translateX(2rem);
-        transition: transform 400ms;
+        transition: margin 400ms;
     }
     &__checked {
         display: flex;
@@ -57,11 +56,8 @@
         height: 6.9rem;
         width: 5.9rem;
         background: #99e2d0;
-        border-top-right-radius: 1.5rem;
-        border-bottom-right-radius: 1.5rem;
         color: white;
         font-size: 1.6rem;
-        // display: none;
         flex-shrink: 0;
         transform: translateX(5.9rem);
         transition: transform 400ms;
@@ -70,8 +66,11 @@
             transition: transform 300ms 150ms;
         }
     }
-    &:hover &__checked,
+
     &:hover &__price {
+        margin-right: 5rem;
+    }
+    &:hover &__checked {
         transform: translateX(0px);
     }
     &:hover &__checked > .fas {
