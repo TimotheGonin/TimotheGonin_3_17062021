@@ -169,14 +169,13 @@ a {
   background: white;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
-  cursor: pointer;
   overflow: hidden;
+  cursor: pointer;
 }
 .card-small__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   padding: 0rem 0rem 0rem 1rem;
   overflow: hidden;
   width: 100%;
@@ -205,9 +204,11 @@ a {
   align-items: center;
   font-style: normal;
   width: 60px;
-  padding: 1rem 1rem 1rem 0;
+  margin-right: -5rem;
+  padding-bottom: 1rem;
   font-weight: 700;
   font-size: 1.4rem;
+  transition: margin 400ms;
 }
 .card-small__checked {
   display: flex;
@@ -217,38 +218,24 @@ a {
   height: 6.9rem;
   width: 5.9rem;
   background: #99e2d0;
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
   color: white;
   font-size: 1.6rem;
   flex-shrink: 0;
-  display: none;
+  transform: translateX(5.9rem);
+  transition: transform 400ms;
+}
+.card-small__checked .fas {
+  transform: rotate(90deg);
+  transition: transform 300ms 150ms;
 }
 .card-small:hover .card-small__price {
-  animation: slide 300ms ease-out;
+  margin-right: 1rem;
 }
 .card-small:hover .card-small__checked {
-  display: flex;
-  animation: slide 300ms ease-out;
+  transform: translateX(0px);
 }
-.card-small:hover .card-small__checked i {
-  animation: rotate 150ms 150ms ease-in;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(5.9rem);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.card-small:hover .card-small__checked > .fas {
+  transform: rotate(360deg);
 }
 
 .footer {
