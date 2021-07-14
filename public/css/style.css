@@ -203,6 +203,7 @@ a {
   align-items: center;
   font-style: normal;
   width: 60px;
+  margin-right: -5rem;
   padding-bottom: 1rem;
   font-weight: 700;
   font-size: 1.4rem;
@@ -223,17 +224,17 @@ a {
   transition: transform 400ms;
 }
 .card-small__checked .fas {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
   transition: transform 300ms 150ms;
 }
 .card-small:hover .card-small__price {
-  margin-right: 5rem;
+  margin-right: 1rem;
 }
 .card-small:hover .card-small__checked {
   transform: translateX(0px);
 }
 .card-small:hover .card-small__checked > .fas {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
 }
 
 .footer {

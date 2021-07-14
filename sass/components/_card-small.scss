@@ -43,6 +43,7 @@
         align-items: center;
         font-style: normal;
         width: 60px;
+        margin-right: -5rem;
         padding-bottom: 1rem;
         font-weight: 700;
         font-size: 1.4rem;
@@ -62,18 +63,18 @@
         transform: translateX(5.9rem);
         transition: transform 400ms;
         .fas {
-            transform: rotate(180deg);
+            transform: rotate(90deg);
             transition: transform 300ms 150ms;
         }
     }
 
     &:hover &__price {
-        margin-right: 5rem;
+        margin-right: 1rem;
     }
     &:hover &__checked {
         transform: translateX(0px);
     }
     &:hover &__checked > .fas {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
