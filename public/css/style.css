@@ -365,6 +365,8 @@ a {
   padding: 2.5rem 0;
   border-radius: 1.8rem;
   position: relative;
+  cursor: pointer;
+  transition: background 200ms ease-in;
 }
 .helper-card__number {
   background: #9356dc;
@@ -382,10 +384,17 @@ a {
   width: 2.4rem;
   height: 2.4rem;
   margin: 0 2rem 0 3.5rem;
+  transition: color 200ms ease-in;
 }
 .helper-card__title {
   font-weight: 500;
   font-size: 1.6rem;
+}
+.helper-card:hover {
+  background: #efe6fa;
+}
+.helper-card:hover .helper-card__icon {
+  color: #9356dc;
 }
 
 .restaurants-selection {
