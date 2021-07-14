@@ -84,13 +84,16 @@ a {
   width: 30px;
   cursor: pointer;
   color: #f6f6f6;
-  text-shadow: 0 0 0.2rem black !important;
+  -webkit-text-stroke-width: 0.15rem;
+  -webkit-text-stroke-color: #353535;
+  transition: color 300ms linear;
 }
-.container .hearth--solid:hover {
-  background: linear-gradient(-145deg, #9356dc 15%, #ff79da 85%) !important;
-  background-clip: text !important;
+.container:hover.hearth--solid {
+  background: linear-gradient(-145deg, #9356dc 15%, #ff79da 85%);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0 0 0 transparent !important;
+  -webkit-text-stroke-width: 0;
 }
 
 .btn {
