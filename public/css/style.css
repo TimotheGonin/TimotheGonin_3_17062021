@@ -113,6 +113,11 @@ a {
   color: white;
   padding: 1.6rem 2.6rem;
   font-size: 1.6rem;
+  transition: all 200ms ease-out;
+}
+.btn:hover {
+  background: linear-gradient(-5deg, #985ede 10%, #ff83dd 105%);
+  box-shadow: 2px 5px 16px 0px #848484;
 }
 
 .pop-up {
