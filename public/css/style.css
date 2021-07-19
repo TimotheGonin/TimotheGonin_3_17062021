@@ -81,6 +81,7 @@ a {
 
 body {
   position: relative;
+  animation: scroll-locker 3s;
 }
 body .container {
   height: 100vh;
@@ -145,6 +146,14 @@ body .container .loader::after {
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes scroll-locker {
+  0%, 99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: inherit;
   }
 }
 .hearth-btn {
