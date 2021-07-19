@@ -180,6 +180,7 @@ a {
   border-radius: 1.5rem;
   overflow: hidden;
   cursor: pointer;
+  animation: apparition 1000ms 200ms ease-out;
 }
 .card-small__info {
   display: flex;
@@ -247,6 +248,16 @@ a {
   transform: rotate(360deg);
 }
 
+@keyframes apparition {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .footer {
   background: #353535;
   color: white;

@@ -10,6 +10,7 @@
     overflow: hidden;
     cursor: pointer;
     @extend%element-shadow-soft;
+    animation: apparition 1000ms 200ms ease-out;
 
     &__info {
         display: flex;
@@ -76,5 +77,16 @@
     }
     &:hover &__checked > .fas {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes apparition {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
