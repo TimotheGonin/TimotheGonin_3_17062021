@@ -12,36 +12,42 @@ body {
         align-items: center;
         justify-content: center;
         animation: on-display 3s ease-in-out;
+
+        // FIRST SPIN
         .loader {
             display: block;
             position: absolute;
-            width: 120px;
-            height: 120px;
+            width: 12rem;
+            height: 12rem;
             border-radius: 50%;
-            border: 3px solid transparent;
+            border: 0.3rem solid transparent;
             border-top-color: $color-primary;
             animation: spin 2s linear infinite;
             z-index: 99;
         }
+
+        //MIDDLE SPIN
         .loader::before {
             content: "";
             position: absolute;
-            top: 5px;
-            left: 5px;
-            right: 5px;
-            bottom: 5px;
+            top: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            bottom: 0.5rem;
             border-radius: 50%;
-            border: 3px solid transparent;
+            border: 0.3rem solid transparent;
             border-top-color: $color-tertiary;
             animation: spin 3s ease-in-out infinite;
         }
+
+        // LAST SPIN
         .loader::after {
             content: "";
             position: absolute;
-            top: 15px;
-            left: 15px;
-            right: 15px;
-            bottom: 15px;
+            top: 1.5rem;
+            left: 1.5rem;
+            right: 1.5rem;
+            bottom: 1.5rem;
             border-radius: 50%;
             border: 3px solid transparent;
             border-top-color: $color-secondary;
@@ -61,14 +67,18 @@ body {
 }
 
 @keyframes on-display {
-    0%,
-    95% {
-        opacity: 1;
+    0% {
         z-index: 98;
+        background: rgba(255, 255, 255, 1);
+        opacity: 1;
+    }
+    33% {
+        background: rgba(255, 255, 255, 0.95);
+        opacity: 0.95;
     }
     100% {
-        opacity: 0;
         z-index: 98;
+        background: rgba(255, 255, 255, 0.9);
     }
 }
 
