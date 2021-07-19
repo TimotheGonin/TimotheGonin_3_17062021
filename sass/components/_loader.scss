@@ -1,0 +1,76 @@
+// <div class="anim">
+//                 <div class="anim8">
+//                     <div class="loader"></div>
+//                 </div>
+//             </div>
+
+body {
+    position: relative;
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        opacity: 0;
+        z-index: 98;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: on-display 3s ease-in-out;
+        .loader {
+            display: block;
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: $color-primary;
+            animation: spin 2s linear infinite;
+            z-index: 99;
+        }
+        .loader::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: $color-tertiary;
+            animation: spin 3s ease-in-out infinite;
+        }
+        .loader::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: $color-secondary;
+            animation: spin 1.5s ease-in infinite;
+        }
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        z-index: 99;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes on-display {
+    0%,
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
