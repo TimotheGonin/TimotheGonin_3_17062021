@@ -79,14 +79,10 @@ a {
   color: inherit;
 }
 
-body {
-  position: relative;
-  animation: scroll-locker 3s;
-}
-body .container {
+.container {
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   z-index: -1;
@@ -95,7 +91,7 @@ body .container {
   justify-content: center;
   animation: on-display 3s ease-in-out;
 }
-body .container .loader {
+.container .loader {
   display: block;
   position: absolute;
   width: 12rem;
@@ -106,7 +102,7 @@ body .container .loader {
   animation: spin 2s linear infinite;
   z-index: 99;
 }
-body .container .loader::before {
+.container .loader::before {
   content: "";
   position: absolute;
   top: 0.5rem;
@@ -118,7 +114,7 @@ body .container .loader::before {
   border-top-color: #99e2d0;
   animation: spin 3s ease-in-out infinite;
 }
-body .container .loader::after {
+.container .loader::after {
   content: "";
   position: absolute;
   top: 1.5rem;
@@ -153,14 +149,6 @@ body .container .loader::after {
   100% {
     z-index: 98;
     background: rgba(255, 255, 255, 0.9);
-  }
-}
-@keyframes scroll-locker {
-  0%, 99% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: inherit;
   }
 }
 .hearth-btn {
