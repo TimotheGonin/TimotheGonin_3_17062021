@@ -78,7 +78,7 @@
 
 .menu {
     background: $darken-bg;
-    padding: 0 2rem;
+    padding: 2.5rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,6 +90,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 70rem;
 
         &__title {
             text-transform: uppercase;
