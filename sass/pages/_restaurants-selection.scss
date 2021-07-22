@@ -13,7 +13,10 @@
     }
     .restaurant-deck {
         @extend %flex-center;
-        flex-flow: column wrap;
+        // flex-flow: column wrap;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-evenly;
         width: 100%;
     }
 }

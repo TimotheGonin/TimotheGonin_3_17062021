@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .helper-card__number, .container {
+.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .helper-card__icon, .helper-card__number, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -288,6 +288,7 @@ a {
   justify-content: space-between;
   width: 100%;
   max-width: 34.9rem;
+  max-width: 50rem;
   height: 6.9rem;
   background: white;
   margin-bottom: 1.5rem;
@@ -477,7 +478,9 @@ a {
   margin-bottom: 1rem;
 }
 .restaurants-selection .restaurant-deck {
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
   width: 100%;
 }
 
