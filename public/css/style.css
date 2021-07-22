@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-.header__title {
+.header__title, .card-small__info {
   display: flex;
   justify-content: center;
 }
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.helper-card__number, .header .search-form .search-bar__icon, .header .search-form .search-bar, .navbar__icon, .navbar {
+.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .helper-card__icon, .helper-card__number, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   box-shadow: 2px 5px 16px 0px #aaaaaa;
 }
 
-.helper-card, .card-small {
+.card-small, .helper-card {
   box-shadow: 2px 5px 16px 0px #d1d1d1;
 }
 
@@ -31,8 +31,9 @@
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
   width: 100%;
+  max-width: 97.5rem;
   text-align: center;
-  padding: 2.5rem 4rem 2.5rem 2rem;
+  padding: 2.5rem 3rem 0rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,52 +80,45 @@ a {
   color: inherit;
 }
 
-body {
-  position: relative;
-  animation: scroll-locker 3s;
-}
-body .container {
+.container {
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   animation: on-display 3s ease-in-out;
 }
-body .container .loader {
+.container .loader {
   display: block;
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 0.3rem solid transparent;
   border-top-color: #9356dc;
   animation: spin 2s linear infinite;
   z-index: 99;
 }
-body .container .loader::before {
+.container .loader::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 0.3rem solid transparent;
   border-top-color: #99e2d0;
   animation: spin 3s ease-in-out infinite;
 }
-body .container .loader::after {
+.container .loader::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  top: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #ff79da;
@@ -141,26 +135,65 @@ body .container .loader::after {
   }
 }
 @keyframes on-display {
-  0%, 95% {
+  0% {
+    z-index: 98;
+    background: white;
     opacity: 1;
-    z-index: 98;
+  }
+  33% {
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0.95;
   }
   100% {
-    opacity: 0;
     z-index: 98;
+    background: rgba(255, 255, 255, 0.9);
   }
 }
-@keyframes scroll-locker {
-  0%, 99% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: inherit;
-  }
+.helper-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f6f6f6;
+  max-width: 33.8rem;
+  width: 100%;
+  margin: 1.5rem 1rem;
+  padding: 2.5rem 0;
+  border-radius: 1.8rem;
+  position: relative;
+  cursor: pointer;
+  transition: background 200ms ease-in;
 }
+.helper-card__number {
+  background: #9356dc;
+  color: white;
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.2rem;
+}
+.helper-card__icon {
+  color: #7e7e7e;
+  font-size: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 2rem 0 3.5rem;
+  transition: color 200ms ease-in;
+}
+.helper-card__title {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.helper-card:hover {
+  background: #efe6fa;
+}
+.helper-card:hover .helper-card__icon {
+  color: #9356dc;
+}
+
 .hearth-btn {
   font-size: 2.4rem;
-  position: absolute;
   right: 3rem;
 }
 .hearth-btn__icon {
@@ -238,7 +271,6 @@ body .container .loader::after {
   justify-content: space-evenly;
   align-items: flex-start;
   flex-flow: column wrap;
-  position: relative;
 }
 .restaurant-card__title {
   font-size: 1.6rem;
@@ -247,24 +279,26 @@ body .container .loader::after {
 .restaurant-card__subtitle {
   font-weight: 300;
 }
+.restaurant-card .hearth-btn {
+  align-self: flex-end;
+  margin-right: 2rem;
+}
 
 .card-small {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 34.9rem;
+  max-width: 50rem;
   height: 6.9rem;
   background: white;
   margin-bottom: 1.5rem;
   border-radius: 1.5rem;
   overflow: hidden;
   cursor: pointer;
-  animation: apparition 1000ms 200ms ease-out;
 }
 .card-small__info {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 0rem 0rem 0rem 1rem;
   overflow: hidden;
   width: 100%;
@@ -300,9 +334,6 @@ body .container .loader::after {
   transition: margin 400ms;
 }
 .card-small__checked {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-style: normal;
   height: 6.9rem;
   width: 5.9rem;
@@ -325,86 +356,6 @@ body .container .loader::after {
 }
 .card-small:hover .card-small__checked > .fas {
   transform: rotate(360deg);
-}
-
-@keyframes apparition {
-  from {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-.footer {
-  background: #353535;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 2.7rem 1.5em 3.7rem 1.5em;
-}
-.footer__title {
-  font-family: Shrikhand;
-  font-size: 1.7rem;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.05rem;
-}
-.footer__action {
-  display: flex;
-  align-items: baseline;
-}
-.footer__action i {
-  font-size: 1.2rem;
-}
-.footer__action p {
-  margin-left: 0.5rem;
-  font-weight: 400;
-}
-.footer p,
-.footer a {
-  padding: 0.5rem 0;
-}
-.footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-}
-
-.helper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  padding: 5rem 2em;
-}
-.helper .helper__title {
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.helper .helper__deck {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.navbar {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  position: relative;
-}
-.navbar__icon {
-  position: absolute;
-  left: 2rem;
-  top: 15%;
-  border: none;
-  background: inherit;
-  font-size: 2.1rem;
-  color: #353535;
-}
-.navbar__icon:hover {
-  cursor: pointer;
 }
 
 .header__title {
@@ -450,55 +401,74 @@ body .container .loader::after {
   margin-bottom: 3rem;
 }
 
-.helper-card {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: #f6f6f6;
-  max-width: 33rem;
+.helper {
+  flex-flow: column wrap;
+  padding: 5rem 2em;
+}
+.helper .helper__title {
+  margin-bottom: 1rem;
   width: 100%;
-  margin: 1.5rem 1rem;
-  padding: 2.5rem 0;
-  border-radius: 1.8rem;
+}
+.helper .helper__deck {
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.navbar {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   position: relative;
-  cursor: pointer;
-  transition: background 200ms ease-in;
 }
-.helper-card__number {
-  background: #9356dc;
-  color: white;
-  height: 2.4rem;
-  width: 2.4rem;
-  font-size: 1.2rem;
-  border-radius: 50%;
+.navbar__icon {
   position: absolute;
-  left: -1.2rem;
+  left: 2rem;
+  top: 15%;
+  border: none;
+  background: inherit;
+  font-size: 2.1rem;
+  color: #353535;
 }
-.helper-card__icon {
-  color: #7e7e7e;
-  font-size: 2rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  margin: 0 2rem 0 3.5rem;
-  transition: color 200ms ease-in;
+.navbar__icon:hover {
+  cursor: pointer;
 }
-.helper-card__title {
-  font-weight: 500;
-  font-size: 1.6rem;
+
+.footer {
+  background: #353535;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 2.7rem 1.5em 3.7rem 1.5em;
 }
-.helper-card:hover {
-  background: #efe6fa;
+.footer__title {
+  font-family: Shrikhand;
+  font-size: 1.7rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.05rem;
 }
-.helper-card:hover .helper-card__icon {
-  color: #9356dc;
+.footer__action {
+  display: flex;
+  align-items: baseline;
+}
+.footer__action i {
+  font-size: 1.2rem;
+}
+.footer__action p {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+.footer p,
+.footer a {
+  padding: 0.5rem 0;
+}
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
 }
 
 .restaurants-selection {
   padding: 5rem 2em;
-  display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   background: #f6f6f6;
   width: 100%;
 }
@@ -509,10 +479,9 @@ body .container .loader::after {
   margin-bottom: 1rem;
 }
 .restaurants-selection .restaurant-deck {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -554,7 +523,7 @@ body .container .loader::after {
 }
 .menu {
   background: #f6f6f6;
-  padding: 0 2rem;
+  padding: 2.5rem 2rem 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -566,13 +535,15 @@ body .container .loader::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
+  max-width: 60rem;
 }
 .menu .step__title {
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+  align-self: start;
 }
 .menu .step__title::after {
   content: "";
@@ -586,6 +557,29 @@ body .container .loader::after {
   margin: 3rem 0 1.5rem 0;
   padding: 1.6rem 5rem;
   align-self: center;
+}
+.menu .step :nth-child(2).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+}
+.menu .step :nth-child(3).card-small {
+  animation: apparition 800ms 150ms backwards ease-in-out;
+}
+.menu .step :nth-child(4).card-small {
+  animation: apparition 800ms 300ms backwards ease-in-out;
+}
+.menu .step :nth-child(5).card-small {
+  animation: apparition 800ms 450ms backwards ease-in-out;
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

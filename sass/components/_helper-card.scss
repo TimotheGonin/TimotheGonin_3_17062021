@@ -4,7 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     background: $darken-bg;
-    max-width: 33rem;
+    max-width: 33.8rem;
     width: 100%;
     margin: 1.5rem 1rem;
     padding: 2.5rem 0;
@@ -24,7 +24,7 @@
         left: -1.2rem;
     }
     &__icon {
-        // @extend %flex-center;
+        @extend %flex-center;
         color: #7e7e7e;
         font-size: 2rem;
         width: 2.4rem;

@@ -78,7 +78,7 @@
 
 .menu {
     background: $darken-bg;
-    padding: 0 2rem;
+    padding: 2.5rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,12 +89,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
+        max-width: 60rem;
+
         &__title {
             text-transform: uppercase;
             font-size: 1.6rem;
             font-weight: 400;
             margin-bottom: 1.5rem;
+            align-self: start;
 
             &::after {
                 content: "";
@@ -110,5 +113,28 @@
             padding: 1.6rem 5rem;
             align-self: center;
         }
+        & :nth-child(2).card-small {
+            animation: apparition 800ms backwards ease-in-out;
+        }
+        & :nth-child(3).card-small {
+            animation: apparition 800ms 150ms backwards ease-in-out;
+        }
+        & :nth-child(4).card-small {
+            animation: apparition 800ms 300ms backwards ease-in-out;
+        }
+        & :nth-child(5).card-small {
+            animation: apparition 800ms 450ms backwards ease-in-out;
+        }
+    }
+}
+
+@keyframes apparition {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
     }
 }

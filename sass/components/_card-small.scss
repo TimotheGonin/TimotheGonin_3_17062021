@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 100%;
     max-width: 34.9rem;
+    max-width: 50rem;
     height: 6.9rem;
     background: white;
     margin-bottom: 1.5rem;
@@ -10,12 +11,10 @@
     overflow: hidden;
     cursor: pointer;
     @extend%element-shadow-soft;
-    animation: apparition 1000ms 200ms ease-out;
 
     &__info {
-        display: flex;
+        @extend %flex-x-center;
         flex-direction: column;
-        justify-content: center;
         padding: 0rem 0rem 0rem 1rem;
         overflow: hidden;
         width: 100%;
@@ -51,9 +50,7 @@
         transition: margin 400ms;
     }
     &__checked {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         font-style: normal;
         height: 6.9rem;
         width: 5.9rem;
@@ -77,16 +74,5 @@
     }
     &:hover &__checked > .fas {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes apparition {
-    from {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0px);
-        opacity: 1;
     }
 }
