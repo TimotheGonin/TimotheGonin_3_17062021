@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-.header__title {
+.header__title, .card-small__info {
   display: flex;
   justify-content: center;
 }
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.navbar__icon, .navbar, .header .search-form .search-bar__icon, .header .search-form .search-bar, .helper-card__number {
+.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .helper-card__number, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,9 +86,6 @@ a {
   background: rgba(255, 255, 255, 0.9);
   opacity: 0;
   z-index: -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   animation: on-display 3s ease-in-out;
 }
 .container .loader {
@@ -297,9 +294,7 @@ a {
   cursor: pointer;
 }
 .card-small__info {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 0rem 0rem 0rem 1rem;
   overflow: hidden;
   width: 100%;
@@ -335,9 +330,6 @@ a {
   transition: margin 400ms;
 }
 .card-small__checked {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-style: normal;
   height: 6.9rem;
   width: 5.9rem;
@@ -406,9 +398,6 @@ a {
 }
 
 .helper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: column wrap;
   padding: 5rem 2em;
 }
@@ -417,9 +406,6 @@ a {
   width: 100%;
 }
 .helper .helper__deck {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -477,10 +463,7 @@ a {
 
 .restaurants-selection {
   padding: 5rem 2em;
-  display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   background: #f6f6f6;
   width: 100%;
 }
@@ -491,10 +474,7 @@ a {
   margin-bottom: 1rem;
 }
 .restaurants-selection .restaurant-deck {
-  display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 

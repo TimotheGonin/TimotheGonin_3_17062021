@@ -1,9 +1,7 @@
 .restaurants-selection {
     padding: 5rem 2em;
-    display: flex;
+    @extend %flex-center;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
     background: $darken-bg;
     width: 100%;
 
@@ -14,10 +12,8 @@
         margin-bottom: 1rem;
     }
     .restaurant-deck {
-        display: flex;
+        @extend %flex-center;
         flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
         width: 100%;
     }
 }

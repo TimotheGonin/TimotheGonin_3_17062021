@@ -1,7 +1,5 @@
 .helper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     flex-flow: column wrap;
     padding: 5rem 2em;
 
@@ -11,9 +9,7 @@
     }
 
     .helper__deck {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
         flex-flow: row wrap;
     }
 }
