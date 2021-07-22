@@ -10,6 +10,7 @@
 
     .helper__deck {
         @extend %flex-center;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
+        width: 100%;
     }
 }
