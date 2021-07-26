@@ -439,6 +439,13 @@ a {
   font-weight: 300;
   padding: 2.7rem 1.5em 3.7rem 1.5em;
 }
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .footer__title {
   font-family: Shrikhand;
   font-size: 1.7rem;

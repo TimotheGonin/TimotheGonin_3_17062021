@@ -1,4 +1,5 @@
-// @mixin flex-x-center {
-//     display: flex;
-//     justify-content: center;
-// }
+@mixin tablets {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
