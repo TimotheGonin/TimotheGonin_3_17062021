@@ -80,51 +80,73 @@
     background: $darken-bg;
     padding: 2.5rem 2rem 0 2rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    .step {
-        margin-bottom: 4rem;
-        width: 100%;
+    flex-direction: column;
+
+    &__list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 60rem;
+        width: 100%;
+        max-width: 1200px;
+        @include large-desktops {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
 
-        &__title {
-            text-transform: uppercase;
-            font-size: 1.6rem;
-            font-weight: 400;
-            margin-bottom: 1.5rem;
-            align-self: start;
+        .step {
+            margin-bottom: 4rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 60rem;
+            margin-bottom: -0.1rem;
 
-            &::after {
-                content: "";
-                display: block;
-                background: $color-tertiary;
-                margin-top: 0.5rem;
-                height: 0.3rem;
-                width: 4rem;
+            @include large-desktops {
+                max-width: 34.9rem;
+            }
+
+            &__title {
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+                align-self: start;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background: $color-tertiary;
+                    margin-top: 0.5rem;
+                    height: 0.3rem;
+                    width: 4rem;
+                }
+            }
+
+            & :nth-child(2).card-small {
+                animation: apparition 800ms backwards ease-in-out;
+            }
+            & :nth-child(3).card-small {
+                animation: apparition 800ms 150ms backwards ease-in-out;
+            }
+            & :nth-child(4).card-small {
+                animation: apparition 800ms 300ms backwards ease-in-out;
+            }
+            & :nth-child(5).card-small {
+                animation: apparition 800ms 450ms backwards ease-in-out;
             }
         }
-        .btn {
-            margin: 3rem 0 1.5rem 0;
-            padding: 1.6rem 5rem;
-            align-self: center;
-        }
-        & :nth-child(2).card-small {
-            animation: apparition 800ms backwards ease-in-out;
-        }
-        & :nth-child(3).card-small {
-            animation: apparition 800ms 150ms backwards ease-in-out;
-        }
-        & :nth-child(4).card-small {
-            animation: apparition 800ms 300ms backwards ease-in-out;
-        }
-        & :nth-child(5).card-small {
-            animation: apparition 800ms 450ms backwards ease-in-out;
-        }
+    }
+
+    .btn {
+        margin: 3rem 0 6rem 0;
+        padding: 1.6rem 5rem;
+        align-self: center;
     }
 }
 

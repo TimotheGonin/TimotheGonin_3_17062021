@@ -31,9 +31,10 @@
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
   width: 100%;
-  max-width: 97.5rem;
+  max-width: 120rem;
   text-align: center;
   padding: 2.5rem 3rem 0rem 2rem;
+  margin-bottom: -0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,6 +254,11 @@ a {
   border-radius: 1.5rem;
   margin: 1rem 0 2rem 0;
 }
+@media (min-width: 1200px) {
+  .restaurant-card {
+    max-width: 51rem;
+  }
+}
 .restaurant-card__figure {
   position: relative;
 }
@@ -288,7 +294,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 34.9rem;
   max-width: 50rem;
   height: 6.9rem;
   background: white;
@@ -296,6 +301,11 @@ a {
   border-radius: 1.5rem;
   overflow: hidden;
   cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .card-small {
+    max-width: 34.9rem;
+  }
 }
 .card-small__info {
   flex-direction: column;
@@ -412,17 +422,31 @@ a {
 .helper .helper__deck {
   flex-flow: column wrap;
   width: 100%;
+  max-width: 77rem;
+}
+@media (min-width: 1200px) {
+  .helper .helper__deck {
+    flex-flow: row wrap;
+    max-width: 120rem;
+  }
 }
 
 .navbar {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+.navbar__content {
+  max-width: 120rem;
+  width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar__icon {
   position: absolute;
   left: 2rem;
-  top: 15%;
+  top: 25%;
   border: none;
   background: inherit;
   font-size: 2.1rem;
@@ -438,6 +462,13 @@ a {
   font-size: 1.5rem;
   font-weight: 300;
   padding: 2.7rem 1.5em 3.7rem 1.5em;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__title {
   font-family: Shrikhand;
@@ -481,8 +512,13 @@ a {
 .restaurants-selection .restaurant-deck {
   flex-flow: row wrap;
   width: 100%;
+  max-width: 77rem;
   justify-content: space-evenly;
-  width: 100%;
+}
+@media (min-width: 1200px) {
+  .restaurants-selection .restaurant-deck {
+    max-width: 120rem;
+  }
 }
 
 .presentation--la-palette-du-gout {
@@ -525,11 +561,26 @@ a {
   background: #f6f6f6;
   padding: 2.5rem 2rem 0 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu__list {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
-.menu .step {
+@media (min-width: 1200px) {
+  .menu__list {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+}
+.menu__list .step {
   margin-bottom: 4rem;
   width: 100%;
   display: flex;
@@ -537,15 +588,21 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 60rem;
+  margin-bottom: -0.1rem;
 }
-.menu .step__title {
+@media (min-width: 1200px) {
+  .menu__list .step {
+    max-width: 34.9rem;
+  }
+}
+.menu__list .step__title {
   text-transform: uppercase;
   font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
   align-self: start;
 }
-.menu .step__title::after {
+.menu__list .step__title::after {
   content: "";
   display: block;
   background: #99e2d0;
@@ -553,22 +610,22 @@ a {
   height: 0.3rem;
   width: 4rem;
 }
-.menu .step .btn {
-  margin: 3rem 0 1.5rem 0;
-  padding: 1.6rem 5rem;
-  align-self: center;
-}
-.menu .step :nth-child(2).card-small {
+.menu__list .step :nth-child(2).card-small {
   animation: apparition 800ms backwards ease-in-out;
 }
-.menu .step :nth-child(3).card-small {
+.menu__list .step :nth-child(3).card-small {
   animation: apparition 800ms 150ms backwards ease-in-out;
 }
-.menu .step :nth-child(4).card-small {
+.menu__list .step :nth-child(4).card-small {
   animation: apparition 800ms 300ms backwards ease-in-out;
 }
-.menu .step :nth-child(5).card-small {
+.menu__list .step :nth-child(5).card-small {
   animation: apparition 800ms 450ms backwards ease-in-out;
+}
+.menu .btn {
+  margin: 3rem 0 6rem 0;
+  padding: 1.6rem 5rem;
+  align-self: center;
 }
 
 @keyframes apparition {

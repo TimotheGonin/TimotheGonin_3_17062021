@@ -12,5 +12,10 @@
         @extend %flex-center;
         flex-flow: column wrap;
         width: 100%;
+        max-width: 77rem;
+        @include large-desktops {
+            flex-flow: row wrap;
+            max-width: 120rem;
+        }
     }
 }

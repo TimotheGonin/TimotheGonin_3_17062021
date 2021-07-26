@@ -15,12 +15,14 @@
     </head>
     <body>
         <nav class="navbar">
-            <form method="get" action="index.html">
-                <button class="navbar__icon">
-                    <i class="fas fa-arrow-left"></i>
-                </button>
-            </form>
-            <h1 class="navbar__title">ohmyfood</h1>
+            <div class="navbar__content">
+                <form method="get" action="index.html">
+                    <button class="navbar__icon">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                </form>
+                <h1 class="navbar__title">ohmyfood</h1>
+            </div>
         </nav>
 
         <header class="presentation--la-palette-du-gout">
@@ -37,167 +39,172 @@
         </header>
 
         <main class="menu">
-            <!-- STARTERS -->
-            <section class="step">
-                <h3 class="step__title">Entrées</h3>
-                <!-- 1 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">Fricassée d'escargot</h4>
-                        <p class="card-small__subtitle">
-                            Au piment d'Espelette
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>25€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+            <div class="menu__list">
+                <!-- STARTERS -->
+                <section class="step">
+                    <h3 class="step__title">Entrées</h3>
+                    <!-- 1 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">
+                                Fricassée d'escargot
+                            </h4>
+                            <p class="card-small__subtitle">
+                                Au piment d'Espelette
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>25€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 2 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">
-                            Foie gras de canard mi-cuit
-                        </h4>
-                        <p class="card-small__subtitle">
-                            Et ses copeaux de truffe noire
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>35€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+                    <!-- 2 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">
+                                Foie gras de canard mi-cuit
+                            </h4>
+                            <p class="card-small__subtitle">
+                                Et ses copeaux de truffe noire
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>35€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 3 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">Oeuf au plat</h4>
-                        <p class="card-small__subtitle">
-                            Assaisonné à la truffe sur lit de caviar
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>20€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
-            </section>
+                    <!-- 3 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">Oeuf au plat</h4>
+                            <p class="card-small__subtitle">
+                                Assaisonné à la truffe sur lit de caviar
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>20€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </section>
 
-            <!-- MAIN COURSES -->
-            <section class="step">
-                <h3 class="step__title">Plats</h3>
-                <!-- 1 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">
-                            Filet de boeuf aux herbes
-                        </h4>
-                        <p class="card-small__subtitle">
-                            Accompagné de sa ribambelle de légumes
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>40€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+                <!-- MAIN COURSES -->
+                <section class="step">
+                    <h3 class="step__title">Plats</h3>
+                    <!-- 1 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">
+                                Filet de boeuf aux herbes
+                            </h4>
+                            <p class="card-small__subtitle">
+                                Accompagné de sa ribambelle de légumes
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>40€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 2 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">
-                            Parmentier de queue de boeuf
-                        </h4>
-                        <p class="card-small__subtitle">
-                            À la truffe noire sur sa purée de panais
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>35€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+                    <!-- 2 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">
+                                Parmentier de queue de boeuf
+                            </h4>
+                            <p class="card-small__subtitle">
+                                À la truffe noire sur sa purée de panais
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>35€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 3 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">Filet de turbot</h4>
-                        <p class="card-small__subtitle">Aux agrumes</p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>44€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
-            </section>
+                    <!-- 3 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">Filet de turbot</h4>
+                            <p class="card-small__subtitle">Aux agrumes</p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>44€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </section>
 
-            <!-- DESSERTS -->
-            <section class="step">
-                <h3 class="step__title">Desserts</h3>
-                <!-- 1 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">Paris-Brest</h4>
-                        <p class="card-small__subtitle">Revisité</p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>18€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+                <!-- DESSERTS -->
+                <section class="step">
+                    <h3 class="step__title">Desserts</h3>
+                    <!-- 1 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">Paris-Brest</h4>
+                            <p class="card-small__subtitle">Revisité</p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>18€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 2 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h3 class="card-small__title">
-                            Macaron au chocolat d'exception
-                        </h3>
-                        <p class="card-small__subtitle">
-                            Et glace à la vanille de Madagascar
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>22€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
+                    <!-- 2 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h3 class="card-small__title">
+                                Macaron au chocolat d'exception
+                            </h3>
+                            <p class="card-small__subtitle">
+                                Et glace à la vanille de Madagascar
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>22€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
 
-                <!-- 3 -->
-                <article class="card-small">
-                    <div class="card-small__info">
-                        <h4 class="card-small__title">Mousse au chocolat</h4>
-                        <p class="card-small__subtitle">
-                            Au piment d'Espelette et à la truffe noire
-                        </p>
-                    </div>
-                    <div class="card-small__price">
-                        <span>23€</span>
-                    </div>
-                    <div class="card-small__checked">
-                        <i class="fas fa-check-circle"></i>
-                    </div>
-                </article>
-
-                <button type="submit" class="btn">Commander</button>
-            </section>
+                    <!-- 3 -->
+                    <article class="card-small">
+                        <div class="card-small__info">
+                            <h4 class="card-small__title">
+                                Mousse au chocolat
+                            </h4>
+                            <p class="card-small__subtitle">
+                                Au piment d'Espelette et à la truffe noire
+                            </p>
+                        </div>
+                        <div class="card-small__price">
+                            <span>23€</span>
+                        </div>
+                        <div class="card-small__checked">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <button type="submit" class="btn">Commander</button>
         </main>
         <footer class="footer">
             <h2 class="footer__title">ohmyfood</h2>

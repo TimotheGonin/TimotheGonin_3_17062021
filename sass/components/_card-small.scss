@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 34.9rem;
+    // max-width: 34.9rem;
     max-width: 50rem;
     height: 6.9rem;
     background: white;
@@ -11,6 +11,10 @@
     overflow: hidden;
     cursor: pointer;
     @extend%element-shadow-soft;
+
+    @include large-desktops {
+        max-width: 34.9rem;
+    }
 
     &__info {
         @extend %flex-x-center;
