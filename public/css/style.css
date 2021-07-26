@@ -561,6 +561,7 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 60rem;
+  margin-bottom: -0.1rem;
 }
 .menu .step__title {
   text-transform: uppercase;
