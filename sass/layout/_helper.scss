@@ -12,5 +12,6 @@
         @extend %flex-center;
         flex-flow: column wrap;
         width: 100%;
+        max-width: 77rem;
     }
 }

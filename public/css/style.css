@@ -412,6 +412,7 @@ a {
 .helper .helper__deck {
   flex-flow: column wrap;
   width: 100%;
+  max-width: 77rem;
 }
 
 .navbar {
@@ -488,8 +489,8 @@ a {
 .restaurants-selection .restaurant-deck {
   flex-flow: row wrap;
   width: 100%;
+  max-width: 77rem;
   justify-content: space-evenly;
-  width: 100%;
 }
 
 .presentation--la-palette-du-gout {
