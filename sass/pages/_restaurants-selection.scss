@@ -17,5 +17,8 @@
         width: 100%;
         max-width: 77rem;
         justify-content: space-evenly;
+        @include large-desktops {
+            max-width: 120rem;
+        }
     }
 }

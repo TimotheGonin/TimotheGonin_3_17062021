@@ -253,6 +253,11 @@ a {
   border-radius: 1.5rem;
   margin: 1rem 0 2rem 0;
 }
+@media (min-width: 1200px) {
+  .restaurant-card {
+    max-width: 51rem;
+  }
+}
 .restaurant-card__figure {
   position: relative;
 }
@@ -414,6 +419,12 @@ a {
   width: 100%;
   max-width: 77rem;
 }
+@media (min-width: 1200px) {
+  .helper .helper__deck {
+    flex-flow: row wrap;
+    max-width: 120rem;
+  }
+}
 
 .navbar {
   margin-top: 1.5rem;
@@ -491,6 +502,11 @@ a {
   width: 100%;
   max-width: 77rem;
   justify-content: space-evenly;
+}
+@media (min-width: 1200px) {
+  .restaurants-selection .restaurant-deck {
+    max-width: 120rem;
+  }
 }
 
 .presentation--la-palette-du-gout {

@@ -3,3 +3,10 @@
         @content;
     }
 }
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin large-desktops {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}

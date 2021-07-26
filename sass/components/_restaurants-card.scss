@@ -6,6 +6,11 @@
     border-radius: 1.5rem;
     margin: 1rem 0 2rem 0;
 
+    //MEDIA QUERIES
+    @include large-desktops {
+        max-width: 51rem;
+    }
+
     &__figure {
         position: relative;
         img {
