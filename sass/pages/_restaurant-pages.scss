@@ -127,11 +127,7 @@
                     width: 4rem;
                 }
             }
-            .btn {
-                margin: 3rem 0 1.5rem 0;
-                padding: 1.6rem 5rem;
-                align-self: center;
-            }
+
             & :nth-child(2).card-small {
                 animation: apparition 800ms backwards ease-in-out;
             }
@@ -145,6 +141,12 @@
                 animation: apparition 800ms 450ms backwards ease-in-out;
             }
         }
+    }
+
+    .btn {
+        margin: 3rem 0 6rem 0;
+        padding: 1.6rem 5rem;
+        align-self: center;
     }
 }
 
