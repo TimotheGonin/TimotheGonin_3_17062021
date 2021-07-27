@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .helper-card__icon, .helper-card__number, .container {
+.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar__content, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .hearth-btn__icon, .helper-card__icon, .helper-card__number, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,9 +195,6 @@ a {
   right: 3rem;
 }
 .hearth-btn__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 30px;
   width: 30px;
   cursor: pointer;
@@ -440,9 +437,6 @@ a {
   max-width: 120rem;
   width: 100%;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .navbar__icon {
   position: absolute;

@@ -6,9 +6,7 @@
         max-width: 120rem;
         width: 100%;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-center;
     }
     &__icon {
         @extend %flex-center;
