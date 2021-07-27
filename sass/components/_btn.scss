@@ -7,7 +7,6 @@
         $color-primary 10%,
         $color-secondary 105%
     );
-    // box-shadow: 2px 5px 16px 0px darken(#eaeaea, 25);
     @include box-shadow(25);
     color: white;
     padding: 1.6rem 2.6rem;

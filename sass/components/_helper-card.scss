@@ -1,5 +1,5 @@
 .helper-card {
-    @extend %element-shadow-soft;
+    @include box-shadow(5);
     display: flex;
     justify-content: flex-start;
     align-items: center;

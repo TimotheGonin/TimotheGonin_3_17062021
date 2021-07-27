@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // max-width: 34.9rem;
     max-width: 50rem;
     height: 6.9rem;
     background: white;
@@ -10,7 +9,7 @@
     border-radius: 1.5rem;
     overflow: hidden;
     cursor: pointer;
-    @extend%element-shadow-soft;
+    @include box-shadow(10);
 
     @include large-desktops {
         max-width: 34.9rem;
