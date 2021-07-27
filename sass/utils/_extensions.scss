@@ -16,6 +16,16 @@
 }
 
 //RESTAURANT PAGES
+
+%restaurant-bg-img {
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 %restaurant-pages-header {
     background: $darken-bg;
     border-top-left-radius: 4rem;
