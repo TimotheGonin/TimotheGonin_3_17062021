@@ -11,6 +11,7 @@
     cursor: pointer;
     @include box-shadow(10);
 
+    //MEDIA QUERIES
     @include large-desktops {
         max-width: 34.9rem;
     }

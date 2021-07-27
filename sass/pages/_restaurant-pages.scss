@@ -1,3 +1,6 @@
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ HEADER RESTAURANT                                                            │
+// └──────────────────────────────────────────────────────────────────────────────┘
 .presentation {
     &--la-palette-du-gout {
         background-image: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -56,6 +59,9 @@
     }
 }
 
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ MENU LAYOUT                                                                  │
+// └──────────────────────────────────────────────────────────────────────────────┘
 .menu {
     background: $grey-light;
     padding: 2.5rem 2rem 0 2rem;
@@ -109,6 +115,8 @@
                 width: 100%;
                 @extend %flex-center;
                 flex-direction: column;
+
+                //APPARITON ANIMATION LOOP
                 @for $i from 1 through 4 {
                     & :nth-child(#{$i}).card-small {
                         animation: apparition 800ms backwards ease-in-out;
