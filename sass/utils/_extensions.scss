@@ -1,3 +1,6 @@
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ FLEXBOX BASIC RULES                                                          │
+// └──────────────────────────────────────────────────────────────────────────────┘
 %flex-x-center {
     display: flex;
     justify-content: center;
@@ -15,7 +18,9 @@
     align-items: center;
 }
 
-//RESTAURANT PAGES
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ RESTAURANT PAGES COMMON RULES                                                │
+// └──────────────────────────────────────────────────────────────────────────────┘
 
 %restaurant-bg-img {
     background-size: cover;
@@ -27,7 +32,7 @@
 }
 
 %restaurant-pages-header {
-    background: $darken-bg;
+    background: $grey-light;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
     width: 100%;

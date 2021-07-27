@@ -2,7 +2,7 @@
 // │ BOX-SHADOW                                                                   │
 // └──────────────────────────────────────────────────────────────────────────────┘
 @mixin box-shadow($intensity) {
-    box-shadow: 2px 5px 16px 0px darken(#eaeaea, $intensity);
+    box-shadow: 2px 5px 16px 0px darken($grey-mid, $intensity);
 }
 
 // ┌──────────────────────────────────────────────────────────────────────────────┐

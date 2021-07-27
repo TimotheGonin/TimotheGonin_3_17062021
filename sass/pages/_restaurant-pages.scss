@@ -57,7 +57,7 @@
 }
 
 .menu {
-    background: $darken-bg;
+    background: $grey-light;
     padding: 2.5rem 2rem 0 2rem;
     display: flex;
     justify-content: center;
@@ -71,6 +71,8 @@
         align-items: center;
         width: 100%;
         max-width: 1200px;
+
+        //MEDIA QUERIES
         @include large-desktops {
             flex-direction: row;
             justify-content: space-evenly;
@@ -80,13 +82,14 @@
         .step {
             margin-bottom: 4rem;
             width: 100%;
+            margin-bottom: -0.1rem;
+            max-width: 60rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            max-width: 60rem;
-            margin-bottom: -0.1rem;
 
+            //MEDIA QUERIES
             @include large-desktops {
                 max-width: 34.9rem;
             }
@@ -98,6 +101,7 @@
                 margin-bottom: 1.5rem;
                 align-self: start;
 
+                //TITLE DECORATION
                 &::after {
                     content: "";
                     display: block;
@@ -108,21 +112,24 @@
                 }
             }
 
-            & :nth-child(2).card-small {
-                animation: apparition 800ms backwards ease-in-out;
-            }
-            & :nth-child(3).card-small {
-                animation: apparition 800ms 150ms backwards ease-in-out;
-            }
-            & :nth-child(4).card-small {
-                animation: apparition 800ms 300ms backwards ease-in-out;
-            }
-            & :nth-child(5).card-small {
-                animation: apparition 800ms 450ms backwards ease-in-out;
+            &__deck {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @for $i from 1 through 4 {
+                    & :nth-child(#{$i}).card-small {
+                        animation: apparition 800ms backwards ease-in-out;
+                        animation-delay: 150ms * $i;
+                    }
+                }
             }
         }
     }
 
+    //BTN COMPONENT POSITION
     .btn {
         margin: 3rem 0 6rem 0;
         padding: 1.6rem 5rem;

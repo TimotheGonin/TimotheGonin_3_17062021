@@ -2,7 +2,7 @@
     padding: 5rem 2em;
     @extend %flex-center;
     flex-flow: column wrap;
-    background: $darken-bg;
+    background: $grey-light;
     width: 100%;
 
     &__title {

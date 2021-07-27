@@ -28,7 +28,7 @@
 }
 
 .presentation--le-delice-des-sens__header, .presentation--a-la-francaise__header, .presentation--la-note-enchantee__header, .presentation--la-palette-du-gout__header {
-  background: #f6f6f6;
+  background: #f4f4f4;
   border-top-left-radius: 4rem;
   border-top-right-radius: 4rem;
   width: 100%;
@@ -75,6 +75,11 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input {
+  outline: none;
+  border: none;
 }
 
 .container {
@@ -147,11 +152,11 @@ a {
   }
 }
 .helper-card {
-  box-shadow: 2px 5px 16px 0px #dddddd;
+  box-shadow: 2px 5px 16px 0px #dbdbdb;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #f6f6f6;
+  background: #f4f4f4;
   max-width: 33.8rem;
   width: 100%;
   margin: 1.5rem 1rem;
@@ -198,7 +203,7 @@ a {
   height: 30px;
   width: 30px;
   cursor: pointer;
-  color: #f6f6f6;
+  color: #f4f4f4;
   -webkit-text-stroke-width: 0.15rem;
   -webkit-text-stroke-color: #353535;
   transition: all 300ms ease-in-out;
@@ -216,7 +221,7 @@ a {
   border-radius: 4rem;
   cursor: pointer;
   background: linear-gradient(-5deg, #9356dc 10%, #ff79da 105%);
-  box-shadow: 2px 5px 16px 0px #aaaaaa;
+  box-shadow: 2px 5px 16px 0px #a8a8a8;
   color: white;
   padding: 1.6rem 2.6rem;
   font-size: 1.6rem;
@@ -224,7 +229,7 @@ a {
 }
 .btn:hover {
   background: linear-gradient(-5deg, #985ede 10%, #ff83dd 105%);
-  box-shadow: 2px 5px 16px 0px #848484;
+  box-shadow: 2px 5px 16px 0px #828282;
 }
 
 .pop-up {
@@ -306,7 +311,7 @@ a {
   border-radius: 1.5rem;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 2px 5px 16px 0px #d1d1d1;
+  box-shadow: 2px 5px 16px 0px #cecece;
 }
 @media (min-width: 1200px) {
   .card-small {
@@ -379,12 +384,12 @@ a {
   padding-bottom: 0.3rem;
 }
 .header .search-form {
-  background: #f6f6f6;
+  background: #f4f4f4;
   text-align: center;
 }
 .header .search-form .search-bar {
-  box-shadow: inset 0 5px 5px -5px #aaaaaa;
-  background-color: #eaeaea;
+  box-shadow: inset 0 5px 5px -5px #a8a8a8;
+  background-color: #e8e8e8;
   padding: 1.5rem 0;
   width: 100%;
   color: #353535;
@@ -394,7 +399,7 @@ a {
   padding-right: 1.7rem;
 }
 .header .search-form .search-bar__input {
-  background-color: #eaeaea;
+  background-color: #e8e8e8;
   outline: none;
   border: none;
   font-weight: 700;
@@ -505,7 +510,7 @@ a {
 .restaurants-selection {
   padding: 5rem 2em;
   flex-flow: column wrap;
-  background: #f6f6f6;
+  background: #f4f4f4;
   width: 100%;
 }
 .restaurants-selection__title {
@@ -539,7 +544,7 @@ a {
   background-image: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 .menu {
-  background: #f6f6f6;
+  background: #f4f4f4;
   padding: 2.5rem 2rem 0 2rem;
   display: flex;
   justify-content: center;
@@ -564,12 +569,12 @@ a {
 .menu__list .step {
   margin-bottom: 4rem;
   width: 100%;
+  margin-bottom: -0.1rem;
+  max-width: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60rem;
-  margin-bottom: -0.1rem;
 }
 @media (min-width: 1200px) {
   .menu__list .step {
@@ -591,17 +596,28 @@ a {
   height: 0.3rem;
   width: 4rem;
 }
-.menu__list .step :nth-child(2).card-small {
+.menu__list .step__deck {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__list .step__deck :nth-child(1).card-small {
   animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 150ms;
 }
-.menu__list .step :nth-child(3).card-small {
-  animation: apparition 800ms 150ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(2).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 300ms;
 }
-.menu__list .step :nth-child(4).card-small {
-  animation: apparition 800ms 300ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(3).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 450ms;
 }
-.menu__list .step :nth-child(5).card-small {
-  animation: apparition 800ms 450ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(4).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 600ms;
 }
 .menu .btn {
   margin: 3rem 0 6rem 0;
