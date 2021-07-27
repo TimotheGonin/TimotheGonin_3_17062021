@@ -6,17 +6,17 @@
     }
 
     .search-form {
-        background: $darken-bg;
+        background: $grey-light;
         @extend %flex-y-center;
         text-align: center;
 
         .search-bar {
-            box-shadow: inset 0 5px 5px -5px darken(#eaeaea, 25);
+            box-shadow: inset 0 5px 5px -5px darken($grey-mid, 25);
             @extend %flex-center;
-            background-color: #eaeaea;
+            background-color: $grey-mid;
             padding: 1.5rem 0;
             width: 100%;
-            color: #353535;
+            color: $grey;
 
             &__icon {
                 @extend %flex-center;
@@ -25,7 +25,7 @@
             }
 
             &__input {
-                background-color: #eaeaea;
+                background-color: $grey-mid;
                 outline: none;
                 border: none;
                 font-weight: 700;
