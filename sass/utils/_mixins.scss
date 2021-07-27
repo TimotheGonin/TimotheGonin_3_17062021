@@ -1,3 +1,11 @@
+@mixin box-shadow($intensity) {
+    box-shadow: 2px 5px 16px 0px darken(#eaeaea, $intensity);
+}
+
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ MEDIA QUERIES                                                                │
+// └──────────────────────────────────────────────────────────────────────────────┘
+// Medium devices (tablets, 768px and up)
 @mixin tablets {
     @media (min-width: 768px) {
         @content;
