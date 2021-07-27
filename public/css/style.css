@@ -41,16 +41,16 @@
   font-size: 2.4rem;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 * {
@@ -61,11 +61,6 @@ html {
 .navbar__title {
   font-family: Shrikhand, sans-serif;
   font-size: 3rem;
-}
-
-.helper__title {
-  font-weight: 700;
-  font-size: 2.4rem;
 }
 
 a {
@@ -413,6 +408,8 @@ a {
 .helper .helper__title {
   margin-bottom: 1rem;
   width: 100%;
+  font-weight: 700;
+  font-size: 2.4rem;
 }
 .helper .helper__deck {
   flex-flow: column wrap;
