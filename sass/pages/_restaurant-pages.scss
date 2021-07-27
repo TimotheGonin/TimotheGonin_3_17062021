@@ -80,11 +80,6 @@
         .step {
             margin-bottom: 4rem;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 60rem;
             margin-bottom: -0.1rem;
 
             @include large-desktops {
@@ -107,19 +102,33 @@
                     width: 4rem;
                 }
             }
+            &__deck {
+                width: 100%;
+                max-width: 60rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-            & :nth-child(2).card-small {
-                animation: apparition 800ms backwards ease-in-out;
+                @for $i from 1 through 4 {
+                    & :nth-child(#{$i}).card-small {
+                        animation: apparition 800ms backwards ease-in-out;
+                        animation-delay: 150ms * $i;
+                    }
+                }
             }
-            & :nth-child(3).card-small {
-                animation: apparition 800ms 150ms backwards ease-in-out;
-            }
-            & :nth-child(4).card-small {
-                animation: apparition 800ms 300ms backwards ease-in-out;
-            }
-            & :nth-child(5).card-small {
-                animation: apparition 800ms 450ms backwards ease-in-out;
-            }
+            // & :nth-child(2).card-small {
+            //     animation: apparition 800ms backwards ease-in-out;
+            // }
+            // & :nth-child(3).card-small {
+            //     animation: apparition 800ms 150ms backwards ease-in-out;
+            // }
+            // & :nth-child(4).card-small {
+            //     animation: apparition 800ms 300ms backwards ease-in-out;
+            // }
+            // & :nth-child(5).card-small {
+            //     animation: apparition 800ms 450ms backwards ease-in-out;
+            // }
         }
     }
 

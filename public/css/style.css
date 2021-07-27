@@ -567,11 +567,6 @@ input {
 .menu__list .step {
   margin-bottom: 4rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 60rem;
   margin-bottom: -0.1rem;
 }
 @media (min-width: 1200px) {
@@ -594,17 +589,29 @@ input {
   height: 0.3rem;
   width: 4rem;
 }
-.menu__list .step :nth-child(2).card-small {
+.menu__list .step__deck {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__list .step__deck :nth-child(1).card-small {
   animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 150ms;
 }
-.menu__list .step :nth-child(3).card-small {
-  animation: apparition 800ms 150ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(2).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 300ms;
 }
-.menu__list .step :nth-child(4).card-small {
-  animation: apparition 800ms 300ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(3).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 450ms;
 }
-.menu__list .step :nth-child(5).card-small {
-  animation: apparition 800ms 450ms backwards ease-in-out;
+.menu__list .step__deck :nth-child(4).card-small {
+  animation: apparition 800ms backwards ease-in-out;
+  animation-delay: 600ms;
 }
 .menu .btn {
   margin: 3rem 0 6rem 0;
