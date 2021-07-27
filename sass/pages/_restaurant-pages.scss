@@ -59,16 +59,12 @@
 .menu {
     background: $grey-light;
     padding: 2.5rem 2rem 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     flex-direction: column;
 
     &__list {
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         max-width: 1200px;
 
@@ -84,11 +80,8 @@
             width: 100%;
             margin-bottom: -0.1rem;
             max-width: 60rem;
-            display: flex;
+            @extend %flex-center;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
             //MEDIA QUERIES
             @include large-desktops {
                 max-width: 34.9rem;
@@ -114,11 +107,8 @@
 
             &__deck {
                 width: 100%;
-                display: flex;
+                @extend %flex-center;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
                 @for $i from 1 through 4 {
                     & :nth-child(#{$i}).card-small {
                         animation: apparition 800ms backwards ease-in-out;

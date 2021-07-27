@@ -6,13 +6,13 @@
   justify-content: center;
 }
 
-.header .search-form {
+.header .search-form, .card-small__price {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar__content, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .hearth-btn__icon, .helper-card__icon, .helper-card__number, .container {
+.menu__list .step__deck, .menu__list .step, .menu__list, .menu, .restaurants-selection .restaurant-deck, .restaurants-selection, .navbar__icon, .navbar__content, .navbar, .helper .helper__deck, .helper, .header .search-form .search-bar__icon, .header .search-form .search-bar, .card-small__checked, .hearth-btn__icon, .helper-card__icon, .helper-card__number, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +253,7 @@ input {
   border-radius: 1.5rem;
   margin: 1rem 0 2rem 0;
   overflow: hidden;
-  box-shadow: 2px 5px 16px 0px #d1d1d1;
+  box-shadow: 2px 5px 16px 0px #cecece;
   transition: box-shadow 150ms ease-in;
 }
 @media (min-width: 1200px) {
@@ -294,7 +294,7 @@ input {
   margin-right: 2rem;
 }
 .restaurant-card:hover {
-  box-shadow: 2px 5px 16px 0px #aaaaaa;
+  box-shadow: 2px 5px 16px 0px #a8a8a8;
 }
 .restaurant-card:hover img {
   transform: scale(1.2);
@@ -342,10 +342,7 @@ input {
   white-space: nowrap;
 }
 .card-small__price {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   font-style: normal;
   width: 60px;
   margin-right: -5rem;
@@ -546,16 +543,10 @@ input {
 .menu {
   background: #f4f4f4;
   padding: 2.5rem 2rem 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .menu__list {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   max-width: 1200px;
 }
@@ -571,10 +562,7 @@ input {
   width: 100%;
   margin-bottom: -0.1rem;
   max-width: 60rem;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 @media (min-width: 1200px) {
   .menu__list .step {
@@ -598,10 +586,7 @@ input {
 }
 .menu__list .step__deck {
   width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .menu__list .step__deck :nth-child(1).card-small {
   animation: apparition 800ms backwards ease-in-out;

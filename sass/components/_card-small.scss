@@ -40,10 +40,8 @@
         white-space: nowrap;
     }
     &__price {
-        display: flex;
-        flex-direction: column;
+        @extend %flex-y-center;
         justify-content: flex-end;
-        align-items: center;
         font-style: normal;
         width: 60px;
         margin-right: -5rem;
