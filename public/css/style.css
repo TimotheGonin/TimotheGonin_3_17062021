@@ -568,6 +568,11 @@ input {
   margin-bottom: 4rem;
   width: 100%;
   margin-bottom: -0.1rem;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1200px) {
   .menu__list .step {
@@ -591,7 +596,6 @@ input {
 }
 .menu__list .step__deck {
   width: 100%;
-  max-width: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

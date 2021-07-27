@@ -83,6 +83,11 @@
             margin-bottom: 4rem;
             width: 100%;
             margin-bottom: -0.1rem;
+            max-width: 60rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
             //MEDIA QUERIES
             @include large-desktops {
@@ -109,7 +114,6 @@
 
             &__deck {
                 width: 100%;
-                max-width: 60rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -125,6 +129,7 @@
         }
     }
 
+    //BTN COMPONENT POSITION
     .btn {
         margin: 3rem 0 6rem 0;
         padding: 1.6rem 5rem;
