@@ -256,6 +256,7 @@ a {
 }
 .restaurant-card__figure {
   position: relative;
+  overflow: hidden;
 }
 .restaurant-card__figure img {
   border-top-left-radius: 1.5rem;
@@ -263,6 +264,7 @@ a {
   height: 17.4rem;
   width: 100%;
   object-fit: cover;
+  transition: transform 300ms ease-out;
 }
 .restaurant-card__body {
   height: 7.7rem;
@@ -283,6 +285,12 @@ a {
 .restaurant-card .hearth-btn {
   align-self: flex-end;
   margin-right: 2rem;
+}
+.restaurant-card:hover {
+  box-shadow: 2px 5px 16px 0px #aaaaaa;
+}
+.restaurant-card:hover img {
+  transform: scale(1.2);
 }
 
 .card-small {
