@@ -13,11 +13,7 @@
     font-size: 1.6rem;
     transition: all 200ms ease-out;
     &:hover {
-        background: linear-gradient(
-            -5deg,
-            lighten($color-primary, 2) 10%,
-            lighten($color-secondary, 2) 105%
-        );
+        @include gradient-bg(-5deg, 10%, 105%);
         @include box-shadow(40);
     }
 }
