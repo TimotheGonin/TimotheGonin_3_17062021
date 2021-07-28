@@ -2,23 +2,26 @@
     width: 100%;
     max-width: 33.5rem;
     height: 25.1rem;
-    @extend %element-shadow;
     border-radius: 1.5rem;
     margin: 1rem 0 2rem 0;
+    overflow: hidden;
+    @include box-shadow(10);
+    transition: box-shadow 150ms ease-in;
 
     //MEDIA QUERIES
     @include large-desktops {
         max-width: 51rem;
     }
-
     &__figure {
         position: relative;
+        overflow: hidden;
         img {
             border-top-left-radius: 1.5rem;
             border-top-right-radius: 1.5rem;
             height: 17.4rem;
             width: 100%;
             object-fit: cover;
+            transition: transform 300ms ease-out;
         }
     }
     &__body {
@@ -40,5 +43,11 @@
     .hearth-btn {
         align-self: flex-end;
         margin-right: 2rem;
+    }
+    &:hover {
+        @include box-shadow(25);
+        & img {
+            transform: scale(1.2);
+        }
     }
 }

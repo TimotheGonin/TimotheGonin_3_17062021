@@ -1,3 +1,6 @@
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ FLEXBOX BASIC RULES                                                          │
+// └──────────────────────────────────────────────────────────────────────────────┘
 %flex-x-center {
     display: flex;
     justify-content: center;
@@ -15,17 +18,21 @@
     align-items: center;
 }
 
-%element-shadow {
-    box-shadow: 2px 5px 16px 0px darken(#eaeaea, 25);
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ RESTAURANT PAGES COMMON RULES                                                │
+// └──────────────────────────────────────────────────────────────────────────────┘
+
+%restaurant-bg-img {
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-%element-shadow-soft {
-    box-shadow: 2px 5px 16px 0px darken(#eaeaea, 10);
-}
-
-//RESTAURANT PAGES
 %restaurant-pages-header {
-    background: $darken-bg;
+    background: $grey-light;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
     width: 100%;

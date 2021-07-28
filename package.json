@@ -4,7 +4,8 @@
     "description": "TimotheGonin_3_17062021",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+        "sass": "sass ./sass/main.scss:./public/css/style.css",
+        "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/"
     },
     "repository": {
         "type": "git",
@@ -15,5 +16,6 @@
     "bugs": {
         "url": "https://github.com/TimotheGonin/TimotheGonin_3_17062021/issues"
     },
-    "homepage": "https://github.com/TimotheGonin/TimotheGonin_3_17062021#readme"
+    "homepage": "https://github.com/TimotheGonin/TimotheGonin_3_17062021#readme",
+    "browserslist": "last 4 versions"
 }

@@ -1,12 +1,10 @@
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ HEADER RESTAURANT                                                            │
+// └──────────────────────────────────────────────────────────────────────────────┘
 .presentation {
     &--la-palette-du-gout {
         background-image: url("../../public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-        background-size: cover;
-        background-position: top;
-        height: 32rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @extend %restaurant-bg-img;
         &__header {
             @extend %restaurant-pages-header;
         }
@@ -20,12 +18,7 @@
 
     &--la-note-enchantee {
         background-image: url("../../public/img/stil-u2Lp8tXIcjw-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 32rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @extend %restaurant-bg-img;
         &__header {
             @extend %restaurant-pages-header;
         }
@@ -39,12 +32,7 @@
 
     &--a-la-francaise {
         background-image: url("../../public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 32rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @extend %restaurant-bg-img;
         &__header {
             @extend %restaurant-pages-header;
         }
@@ -58,12 +46,7 @@
 
     &--le-delice-des-sens {
         background-image: url("../../public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 32rem;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @extend %restaurant-bg-img;
         &__header {
             @extend %restaurant-pages-header;
         }
@@ -76,21 +59,22 @@
     }
 }
 
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ MENU LAYOUT                                                                  │
+// └──────────────────────────────────────────────────────────────────────────────┘
 .menu {
-    background: $darken-bg;
+    background: $grey-light;
     padding: 2.5rem 2rem 0 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
     flex-direction: column;
 
     &__list {
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         max-width: 1200px;
+
+        //MEDIA QUERIES
         @include large-desktops {
             flex-direction: row;
             justify-content: space-evenly;
@@ -100,13 +84,11 @@
         .step {
             margin-bottom: 4rem;
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            max-width: 60rem;
             margin-bottom: -0.1rem;
-
+            max-width: 60rem;
+            @extend %flex-center;
+            flex-direction: column;
+            //MEDIA QUERIES
             @include large-desktops {
                 max-width: 34.9rem;
             }
@@ -118,6 +100,7 @@
                 margin-bottom: 1.5rem;
                 align-self: start;
 
+                //TITLE DECORATION
                 &::after {
                     content: "";
                     display: block;
@@ -128,21 +111,23 @@
                 }
             }
 
-            & :nth-child(2).card-small {
-                animation: apparition 800ms backwards ease-in-out;
-            }
-            & :nth-child(3).card-small {
-                animation: apparition 800ms 150ms backwards ease-in-out;
-            }
-            & :nth-child(4).card-small {
-                animation: apparition 800ms 300ms backwards ease-in-out;
-            }
-            & :nth-child(5).card-small {
-                animation: apparition 800ms 450ms backwards ease-in-out;
+            &__deck {
+                width: 100%;
+                @extend %flex-center;
+                flex-direction: column;
+
+                //APPARITON ANIMATION LOOP
+                @for $i from 1 through 4 {
+                    & :nth-child(#{$i}).card-small {
+                        animation: apparition 800ms backwards ease-in-out;
+                        animation-delay: 150ms * $i;
+                    }
+                }
             }
         }
     }
 
+    //BTN COMPONENT POSITION
     .btn {
         margin: 3rem 0 6rem 0;
         padding: 1.6rem 5rem;

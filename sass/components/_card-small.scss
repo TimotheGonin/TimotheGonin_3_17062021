@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    // max-width: 34.9rem;
     max-width: 50rem;
     height: 6.9rem;
     background: white;
@@ -10,8 +9,9 @@
     border-radius: 1.5rem;
     overflow: hidden;
     cursor: pointer;
-    @extend%element-shadow-soft;
+    @include box-shadow(10);
 
+    //MEDIA QUERIES
     @include large-desktops {
         max-width: 34.9rem;
     }
@@ -41,10 +41,8 @@
         white-space: nowrap;
     }
     &__price {
-        display: flex;
-        flex-direction: column;
+        @extend %flex-y-center;
         justify-content: flex-end;
-        align-items: center;
         font-style: normal;
         width: 60px;
         margin-right: -5rem;
