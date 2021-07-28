@@ -6,6 +6,17 @@
 }
 
 // ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ GRADIENT                                                                     │
+// └──────────────────────────────────────────────────────────────────────────────┘
+@mixin gradient-bg($angle, $clr-prmry-stop, $clr-scndry-stop) {
+    background: linear-gradient(
+        $angle,
+        lighten($color-primary, 2) $clr-prmry-stop,
+        lighten($color-secondary, 2) $clr-scndry-stop
+    );
+}
+
+// ┌──────────────────────────────────────────────────────────────────────────────┐
 // │ MEDIA QUERIES                                                                │
 // └──────────────────────────────────────────────────────────────────────────────┘
 // Medium devices (tablets, 768px and up)
