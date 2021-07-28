@@ -1,0 +1,24 @@
+.restaurants-selection {
+    padding: 5rem 2em;
+    @extend %flex-center;
+    flex-flow: column wrap;
+    background: $grey-light;
+    width: 100%;
+
+    &__title {
+        width: 100%;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    .restaurant-deck {
+        @extend %flex-center;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 77rem;
+        justify-content: space-evenly;
+        @include large-desktops {
+            max-width: 120rem;
+        }
+    }
+}

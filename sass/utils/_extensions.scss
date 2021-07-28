@@ -1,0 +1,54 @@
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ FLEXBOX BASIC RULES                                                          │
+// └──────────────────────────────────────────────────────────────────────────────┘
+%flex-x-center {
+    display: flex;
+    justify-content: center;
+}
+
+%flex-y-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ┌──────────────────────────────────────────────────────────────────────────────┐
+// │ RESTAURANT PAGES COMMON RULES                                                │
+// └──────────────────────────────────────────────────────────────────────────────┘
+
+%restaurant-bg-img {
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+%restaurant-pages-header {
+    background: $grey-light;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    width: 100%;
+    max-width: 120rem;
+    text-align: center;
+    padding: 2.5rem 3rem 0rem 2rem;
+    margin-bottom: -0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%restaurant-pages-title {
+    font-family: Shrikhand, sans-serif;
+    font-size: 2.7rem;
+}
+%restaurant-pages-icon {
+    font-size: 2.4rem;
+}

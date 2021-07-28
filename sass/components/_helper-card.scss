@@ -1,0 +1,45 @@
+.helper-card {
+    @include box-shadow(5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: $grey-light;
+    max-width: 33.8rem;
+    width: 100%;
+    margin: 1.5rem 1rem;
+    padding: 2.5rem 0;
+    border-radius: 1.8rem;
+    position: relative;
+    cursor: pointer;
+    transition: background 200ms ease-in;
+    &__number {
+        @extend %flex-center;
+        background: $color-primary;
+        color: white;
+        height: 2.4rem;
+        width: 2.4rem;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        position: absolute;
+        left: -1.2rem;
+    }
+    &__icon {
+        @extend %flex-center;
+        color: #7e7e7e;
+        font-size: 2rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        margin: 0 2rem 0 3.5rem;
+        transition: color 200ms ease-in;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+    &:hover {
+        background: lighten($color-primary, 34);
+    }
+    &:hover &__icon {
+        color: $color-primary;
+    }
+}

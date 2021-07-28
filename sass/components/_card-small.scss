@@ -1,0 +1,80 @@
+.card-small {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;
+    height: 6.9rem;
+    background: white;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    cursor: pointer;
+    @include box-shadow(10);
+
+    //MEDIA QUERIES
+    @include large-desktops {
+        max-width: 34.9rem;
+    }
+
+    &__info {
+        @extend %flex-x-center;
+        flex-direction: column;
+        padding: 0rem 0rem 0rem 1rem;
+        overflow: hidden;
+        width: 100%;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 1.35rem;
+        display: inline-block;
+        width: 90%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__price {
+        @extend %flex-y-center;
+        justify-content: flex-end;
+        font-style: normal;
+        width: 60px;
+        margin-right: -5rem;
+        padding-bottom: 1rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+        transition: margin 400ms;
+    }
+    &__checked {
+        @extend %flex-center;
+        font-style: normal;
+        height: 6.9rem;
+        width: 5.9rem;
+        background: #99e2d0;
+        color: white;
+        font-size: 1.6rem;
+        flex-shrink: 0;
+        transform: translateX(5.9rem);
+        transition: transform 400ms;
+        .fas {
+            transform: rotate(90deg);
+            transition: transform 300ms 150ms;
+        }
+    }
+
+    &:hover &__price {
+        margin-right: 1rem;
+    }
+    &:hover &__checked {
+        transform: translateX(0px);
+    }
+    &:hover &__checked > .fas {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,54 @@
+.header {
+    &__title {
+        @extend %flex-x-center;
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
+    }
+
+    .search-form {
+        background: $grey-light;
+        @extend %flex-y-center;
+        text-align: center;
+
+        .search-bar {
+            box-shadow: inset 0 5px 5px -5px darken($grey-mid, 25);
+            @extend %flex-center;
+            background-color: $grey-mid;
+            padding: 1.5rem 0;
+            width: 100%;
+            color: $grey;
+
+            &__icon {
+                @extend %flex-center;
+                font-size: 1.6rem;
+                padding-right: 1.7rem;
+            }
+
+            &__input {
+                background-color: $grey-mid;
+                outline: none;
+                border: none;
+                font-weight: 700;
+                max-width: 35%;
+                font-size: 1.5rem;
+            }
+        }
+
+        .search-info {
+            margin: 3.5rem 0 5.6rem;
+
+            &__title {
+                font-weight: 700;
+                font-size: 2.4rem;
+                padding: 0 2.4em;
+                margin-bottom: 1rem;
+            }
+            &__subtitle {
+                font-weight: 300;
+                font-size: 1.75rem;
+                padding: 0 1.75em;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

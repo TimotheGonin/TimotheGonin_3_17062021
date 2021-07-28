@@ -1,0 +1,23 @@
+.helper {
+    @extend %flex-center;
+    flex-flow: column wrap;
+    padding: 5rem 2em;
+
+    .helper__title {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+
+    .helper__deck {
+        @extend %flex-center;
+        flex-flow: column wrap;
+        width: 100%;
+        max-width: 77rem;
+        @include large-desktops {
+            flex-flow: row wrap;
+            max-width: 120rem;
+        }
+    }
+}
